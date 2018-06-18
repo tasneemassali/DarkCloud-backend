@@ -1,0 +1,14 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="InspectionProjectProfileManager">
+        <option name="PROJECT_PROFILE" />
+        <version value="1.0" />
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+        <property name="last_opened_file_path" value="C:/Python27/python.exe" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
