@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.IndexError'> list index out of range"
+p3
+sS'layer'
+p4
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\models\\db.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0000000007731B30, file "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\models\\db.py", line 7>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\models\\db.py", line 182, in <module>\n    migrate=False\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 586, in define_table\n    table = self.lazy_define_table(tablename, *fields, **args)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 598, in lazy_define_table\n    table = table_class(self, tablename, *fields, **args)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\objects.py", line 283, in __init__\n    f.name == _primarykey[0]][0]\nIndexError: list index out of range\n'
+p11
+s.

@@ -1,0 +1,1249 @@
+(dp1
+S'output'
+p2
+S'<class \'gluon.contrib.pymysql.err.InternalError\'> (1054, u"Unknown column \'endpoint_agents.version_os\' in \'field list\'")'
+p3
+sS'layer'
+p4
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers/default.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0000000010812130, file "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers/default.py", line 4>'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'gluon.contrib.pymysql.err'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of InternalError object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of InternalError object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of InternalError object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of InternalError object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'message'
+p26
+S"''"
+p27
+sS'__init__'
+p28
+S"<method-wrapper '__init__' of InternalError object>"
+p29
+sS'__setattr__'
+p30
+S"<method-wrapper '__setattr__' of InternalError object>"
+p31
+sS'__reduce_ex__'
+p32
+S'<built-in method __reduce_ex__ of InternalError object>'
+p33
+sS'__new__'
+p34
+S'<built-in method __new__ of type object>'
+p35
+sS'__format__'
+p36
+S'<built-in method __format__ of InternalError object>'
+p37
+sS'__class__'
+p38
+S"<class 'gluon.contrib.pymysql.err.InternalError'>"
+p39
+sS'__doc__'
+p40
+S"'Exception raised when the database encounters an...anymore, the transaction is\\n    out of sync, etc.'"
+p41
+sS'__getitem__'
+p42
+S"<method-wrapper '__getitem__' of InternalError object>"
+p43
+sS'__setstate__'
+p44
+S'<built-in method __setstate__ of InternalError object>'
+p45
+sS'__getattribute__'
+p46
+S"<method-wrapper '__getattribute__' of InternalError object>"
+p47
+sS'args'
+p48
+S'(1054, u"Unknown column \'endpoint_agents.version_os\' in \'field list\'")'
+p49
+sS'__subclasshook__'
+p50
+S'<built-in method __subclasshook__ of type object>'
+p51
+sS'__unicode__'
+p52
+S'<built-in method __unicode__ of InternalError object>'
+p53
+sS'__delattr__'
+p54
+S"<method-wrapper '__delattr__' of InternalError object>"
+p55
+sS'__repr__'
+p56
+S"<method-wrapper '__repr__' of InternalError object>"
+p57
+sS'__hash__'
+p58
+S"<method-wrapper '__hash__' of InternalError object>"
+p59
+ssS'evalue'
+p60
+S'(1054, u"Unknown column \'endpoint_agents.version_os\' in \'field list\'")'
+p61
+sS'request'
+p62
+cgluon.html
+XML_unpickle
+p63
+(S'sa_\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>darkcloud1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-8f466f2a-c9f1-497e-9554-20cbb6660840<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_darkcloud1</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-9ea852e7-2535-4e83-a772-ffdbd723fd86<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-9ea852e7-2535-4e83-a772-ffdbd723fd86; session_id_admin=127.0.0.1-8f466f2a-c9f1-497e-9554-20cbb6660840; session_id_darkcloud1=127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/darkcloud1/default/subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>56476</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>tasneem</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\darkcloud1\\\\&#x27;, &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x7567e08: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;tasneem&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-9ea852e7-2535-4e83-a772-ffdbd723fd86; session_id_admin=127.0.0.1-8f466f2a-c9f1-497e-9554-20cbb6660840; session_id_darkcloud1=127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>192.168.153.1</div></td></tr><tr><td><div>fe80::5cf7:579:cc61:1cf0%22</div></td></tr><tr><td><div>fe80::41b4:b3f5:1301:13c2%10</div></td></tr><tr><td><div>fe80::d18c:aaa8:7042:24e8%15</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.188.1</div></td></tr><tr><td><div>192.168.50.1</div></td></tr><tr><td><div>192.168.1.4</div></td></tr><tr><td><div>fe80::4807:4abc:a288:fdb3%2</div></td></tr><tr><td><div>tasneem</div></td></tr><tr><td><div>fe80::ec74:5042:7a11:bddb%9</div></td></tr><tr><td><div>192.168.108.1</div></td></tr><tr><td><div>fe80::70c1:6b8f:528a:de5b%4</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/darkcloud1/default/subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>56476</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/darkcloud1/default/subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>tasneem</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.16.1-stable+timestamp.2017.11.14.05.54.25</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x0000000005D0B150&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x0000000007526348&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x000000000D646ED0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x0000000005D0B150&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x0000000007526348&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x000000000D646ED0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\darkcloud1\\\\&#x27;, &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x7567e08: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;tasneem&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>192.168.153.1</div></td></tr><tr><td><div>fe80::5cf7:579:cc61:1cf0%22</div></td></tr><tr><td><div>fe80::41b4:b3f5:1301:13c2%10</div></td></tr><tr><td><div>fe80::d18c:aaa8:7042:24e8%15</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.188.1</div></td></tr><tr><td><div>192.168.50.1</div></td></tr><tr><td><div>192.168.1.4</div></td></tr><tr><td><div>fe80::4807:4abc:a288:fdb3%2</div></td></tr><tr><td><div>tasneem</div></td></tr><tr><td><div>fe80::ec74:5042:7a11:bddb%9</div></td></tr><tr><td><div>192.168.108.1</div></td></tr><tr><td><div>fe80::70c1:6b8f:528a:de5b%4</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.16.1-stable+timestamp.2017.11.14.05.54.25</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2018, 4, 22, 3, 47, 25, 626000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/darkcloud1/default/subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2018, 4, 22, 1, 47, 25, 626000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x000000000F6DCEB8&gt;</div></td></tr></table></div>'
+tRp64
+sS'frames'
+p65
+(lp66
+(dp67
+S'file'
+p68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\restricted.py'
+p69
+sS'dump'
+p70
+(dp71
+S'environment'
+p72
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p73
+sS'ccode'
+p74
+S'<code object <module> at 0000000010812130, file ...tions\\darkcloud1\\controllers/default.py", line 4>'
+p75
+ssS'lnum'
+p76
+I219
+sS'lines'
+p77
+(dp78
+I214
+S'    if environment is None:'
+p79
+sI215
+S'        environment = {}'
+p80
+sI216
+S"    environment['__file__'] = layer"
+p81
+sI217
+S"    environment['__name__'] = '__restricted__'"
+p82
+sI218
+S'    try:'
+p83
+sI219
+S'        exec(ccode, environment)'
+p84
+sI220
+S'    except HTTP:'
+p85
+sI221
+S'        raise'
+p86
+sI222
+S'    except RestrictedError:'
+p87
+sI223
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p88
+ssS'call'
+p89
+S'(ccode=<code object <module> at 0000000010812130, file ...tions\\darkcloud1\\controllers/default.py", line 4>, environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers/default.py\', scode=<code object <module> at 0000000010812130, file ...tions\\darkcloud1\\controllers/default.py", line 4>)'
+p90
+sS'func'
+p91
+S'restricted'
+p92
+sa(dp93
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers\\default.py'
+p94
+sg70
+(dp95
+S'auth'
+p96
+S'<gluon.tools.Auth object>'
+p97
+sS'form'
+p98
+S'undefined'
+p99
+sS'builtindict'
+p100
+S"<type 'dict'>"
+p101
+ssg76
+I221
+sg77
+(dp102
+I210
+S'    return dict(form=auth())'
+p103
+sI211
+S''
+sI212
+S'# ---- action to server uploaded static content (required) ---'
+p104
+sI213
+S'@cache.action()'
+p105
+sI214
+S'def download():'
+p106
+sI215
+S'    """'
+p107
+sI216
+S'    allows downloading of uploaded files'
+p108
+sI217
+S'    http://..../[app]/default/download/[filename]'
+p109
+sI218
+S'    """'
+p110
+sI219
+S'    return response.download(request, db)'
+p111
+ssg89
+S'()'
+p112
+sg91
+S'<module>'
+p113
+sa(dp114
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\globals.py'
+p115
+sg70
+(dp116
+S'self'
+p117
+g99
+sS'f'
+S'<function subscriber>'
+p118
+ssg76
+I419
+sg77
+(dp119
+I416
+S'        self.menu = []             # used by the default view layout'
+p120
+sI417
+S'        self.files = []            # used by web2py_ajax.html'
+p121
+sI418
+S'        self._vars = None'
+p122
+sI419
+S'        self._caller = lambda f: f()'
+p123
+sI420
+S'        self._view_environment = None'
+p124
+sI421
+S'        self._custom_commit = None'
+p125
+sI422
+S'        self._custom_rollback = None'
+p126
+sI423
+S"        self.generic_patterns = ['*']"
+p127
+sI414
+S"        self.flash = ''            # used by the default view layout"
+p128
+sI415
+S'        self.meta = Storage()      # used by web2py_ajax.html'
+p129
+ssg89
+S'(f=<function subscriber>)'
+p130
+sg91
+S'<lambda>'
+p131
+sa(dp132
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers\\default.py'
+p133
+sg70
+(dp134
+S'db.honeypots'
+p135
+S'<Table honeypots (id, ip, description)>'
+p136
+sS'global SQLFORM'
+p137
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p138
+sS'addform'
+p139
+S"''"
+p140
+sS'SQLFORM.factory'
+p141
+S'<function factory>'
+p142
+sS'global db'
+p143
+S'<DAL uri="mysql:******@localhost/darkcloud">'
+p144
+sS'db.honeypots.description'
+p145
+S'<pydal.objects.Field object>'
+p146
+sS'db.honeypots.ip'
+p147
+S'<pydal.objects.Field object>'
+p148
+ssg76
+I132
+sg77
+(dp149
+I128
+S''
+sI129
+S"    print session['action']"
+p150
+sI130
+S"    if session['action'] == 'endpoints':"
+p151
+sI131
+S"        type = 'Endpoints'"
+p152
+sI132
+S'        devicestemp = db(db.endpoint_agents).select(db.endpoint_agents.ALL)'
+p153
+sI133
+S'        addform = SQLFORM.factory(db.endpoint_agents.ip, db.endpoint_agents.os_version,db.endpoint_agents.enrolled_flag)'
+p154
+sI134
+S'        if addform.process().accepted:'
+p155
+sI135
+S"            id = db.endpoint_agents.insert(ip=request.vars.ip,os_version=request.vars.os_version ,owner_ID=session['user'].email,"
+p156
+sI136
+S'                                           enrollement_stamp=datetime.now(),enrolled_flag=request.vars.enrolled_flag)'
+p157
+sI127
+S''
+ssg89
+S'()'
+p158
+sg91
+S'subscriber'
+p159
+sa(dp160
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\objects.py'
+p161
+sg70
+(dp162
+S'self.query'
+p163
+S'<Query (`endpoint_agents`.`endpoint_id` IS NOT NULL)>'
+p164
+sS'adapter.select'
+p165
+S'<bound method MySQL.select of <pydal.adapters.mysql.MySQL object>>'
+p166
+sS'fields'
+p167
+S'[<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>]'
+p168
+sS'adapter'
+p169
+S'<pydal.adapters.mysql.MySQL object>'
+p170
+sS'attributes'
+p171
+g21
+sS'self'
+p172
+S'<Set (`endpoint_agents`.`endpoint_id` IS NOT NULL)>'
+p173
+ssg76
+I2250
+sg77
+(dp174
+I2245
+S"                                    attributes.get('join', None),"
+p175
+sI2246
+S"                                    attributes.get('left', None),"
+p176
+sI2247
+S"                                    attributes.get('orderby', None),"
+p177
+sI2248
+S"                                    attributes.get('groupby', None))"
+p178
+sI2249
+S'        fields = adapter.expand_all(fields, tablenames)'
+p179
+sI2250
+S'        return adapter.select(self.query, fields, attributes)'
+p180
+sI2251
+S''
+sI2252
+S'    def iterselect(self, *fields, **attributes):'
+p181
+sI2253
+S'        adapter = self.db._adapter'
+p182
+sI2254
+S'        tablenames = adapter.tables(self.query,'
+p183
+ssg89
+S'(self=<Set (`endpoint_agents`.`endpoint_id` IS NOT NULL)>, *fields=[<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>], **attributes={})'
+p184
+sg91
+S'select'
+p185
+sa(dp186
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py'
+p187
+sg70
+(dp188
+S'self._select_aux'
+p189
+S'<bound method MySQL._select_aux of <pydal.adapters.mysql.MySQL object>>'
+p190
+sS'fields'
+p191
+S'[<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>]'
+p192
+sS'self'
+p193
+S'<pydal.adapters.mysql.MySQL object>'
+p194
+sS'sql'
+p195
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p196
+sS'attributes'
+p197
+g21
+sS'colnames'
+p198
+S"['endpoint_agents.endpoint_id', 'endpoint_agents.ip', 'endpoint_agents.owner_ID', 'endpoint_agents.version_os', 'endpoint_agents.enrollement_timestamp', 'endpoint_agents.enrolled_flag']"
+p199
+ssg76
+I762
+sg77
+(dp200
+I757
+S'        colnames, sql = self._select_wcols(query, fields, **attributes)'
+p201
+sI758
+S"        cache = attributes.get('cache', None)"
+p202
+sI759
+S"        if cache and attributes.get('cacheable', False):"
+p203
+sI760
+S'            return self._cached_select('
+p204
+sI761
+S'                cache, sql, fields, attributes, colnames)'
+p205
+sI762
+S'        return self._select_aux(sql, fields, attributes, colnames)'
+p206
+sI763
+S''
+sI764
+S'    def iterselect(self, query, fields, attributes):'
+p207
+sI765
+S'        colnames, sql = self._select_wcols(query, fields, **attributes)'
+p208
+sI766
+S"        cacheable = attributes.get('cacheable', False)"
+p209
+ssg89
+S'(self=<pydal.adapters.mysql.MySQL object>, query=<Query (`endpoint_agents`.`endpoint_id` IS NOT NULL)>, fields=[<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>], attributes={})'
+p210
+sg91
+g185
+sa(dp211
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py'
+p212
+sg70
+(dp213
+S'self'
+p214
+S'<pydal.adapters.mysql.MySQL object>'
+p215
+sS'rows'
+p216
+g99
+sS'self._select_aux_execute'
+p217
+S'<bound method MySQL._select_aux_execute of <pydal.adapters.mysql.MySQL object>>'
+p218
+sS'sql'
+p219
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p220
+ssg76
+I718
+sg77
+(dp221
+I713
+S'        return self.cursor.fetchall()'
+p222
+sI714
+S''
+sI715
+S'    def _select_aux(self, sql, fields, attributes, colnames):'
+p223
+sI716
+S"        cache = attributes.get('cache', None)"
+p224
+sI717
+S'        if not cache:'
+p225
+sI718
+S'            rows = self._select_aux_execute(sql)'
+p226
+sI719
+S'        else:'
+p227
+sI720
+S'            if isinstance(cache, dict):'
+p228
+sI721
+S"                cache_model = cache['model']"
+p229
+sI722
+S"                time_expire = cache['expiration']"
+p230
+ssg89
+S"(self=<pydal.adapters.mysql.MySQL object>, sql='SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);', fields=[<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>], attributes={}, colnames=['endpoint_agents.endpoint_id', 'endpoint_agents.ip', 'endpoint_agents.owner_ID', 'endpoint_agents.version_os', 'endpoint_agents.enrollement_timestamp', 'endpoint_agents.enrolled_flag'])"
+p231
+sg91
+S'_select_aux'
+p232
+sa(dp233
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py'
+p234
+sg70
+(dp235
+S'self'
+p236
+S'<pydal.adapters.mysql.MySQL object>'
+p237
+sS'self.execute'
+p238
+S'<bound method MySQL.wrap of <pydal.adapters.mysql.MySQL object>>'
+p239
+sS'sql'
+p240
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p241
+ssg76
+I712
+sg77
+(dp242
+I707
+S''
+sI708
+S'    def nested_select(self, query, fields, attributes):'
+p243
+sI709
+S'        return Select(self.db, query, fields, attributes)'
+p244
+sI710
+S''
+sI711
+S'    def _select_aux_execute(self, sql):'
+p245
+sI712
+S'        self.execute(sql)'
+p246
+sI713
+S'        return self.cursor.fetchall()'
+p247
+sI714
+S''
+sI715
+S'    def _select_aux(self, sql, fields, attributes, colnames):'
+p248
+sI716
+S"        cache = attributes.get('cache', None)"
+p249
+ssg89
+S"(self=<pydal.adapters.mysql.MySQL object>, sql='SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);')"
+p250
+sg91
+S'_select_aux_execute'
+p251
+sa(dp252
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\__init__.py'
+p253
+sg70
+(dp254
+S'kwargs'
+p255
+g21
+sS'args'
+p256
+S"(<pydal.adapters.mysql.MySQL object>, 'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);')"
+p257
+sS'f'
+S'<function execute>'
+p258
+ssg76
+I67
+sg77
+(dp259
+I64
+S'            if len(args) > 1:'
+p260
+sI65
+S'                raise ValueError(args[1])'
+p261
+sI66
+S"            raise RuntimeError('no connection available')"
+p262
+sI67
+S'        return f(*args, **kwargs)'
+p263
+sI68
+S'    return wrap'
+p264
+sI69
+S''
+sI70
+S''
+sI71
+S'from .base import SQLAdapter, NoSQLAdapter'
+p265
+sI62
+S'    def wrap(*args, **kwargs):'
+p266
+sI63
+S'        if not args[0].connection:'
+p267
+ssg89
+S"(*args=(<pydal.adapters.mysql.MySQL object>, 'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'), **kwargs={})"
+p268
+sg91
+S'wrap'
+p269
+sa(dp270
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py'
+p271
+sg70
+(dp272
+S'rv'
+p273
+g99
+sS'self'
+p274
+S'<pydal.adapters.mysql.MySQL object>'
+p275
+sS'args'
+p276
+S"('SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);',)"
+p277
+sS'self.cursor'
+p278
+S'<gluon.contrib.pymysql.cursors.Cursor object>'
+p279
+sS'command'
+p280
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p281
+sS'self.cursor.execute'
+p282
+S'<bound method Cursor.execute of <gluon.contrib.pymysql.cursors.Cursor object>>'
+p283
+sS'kwargs'
+p284
+g21
+ssg76
+I412
+sg77
+(dp285
+I416
+S''
+sI407
+S'    def execute(self, *args, **kwargs):'
+p286
+sI408
+S'        command = self.filter_sql_command(args[0])'
+p287
+sI409
+S'        handlers = self._build_handlers_for_execution()'
+p288
+sI410
+S'        for handler in handlers:'
+p289
+sI411
+S'            handler.before_execute(command)'
+p290
+sI412
+S'        rv = self.cursor.execute(command, *args[1:], **kwargs)'
+p291
+sI413
+S'        for handler in handlers:'
+p292
+sI414
+S'            handler.after_execute(command)'
+p293
+sI415
+S'        return rv'
+p294
+ssg89
+S"(self=<pydal.adapters.mysql.MySQL object>, *args=('SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);',), **kwargs={})"
+p295
+sg91
+S'execute'
+p296
+sa(dp297
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\cursors.py'
+p298
+sg70
+(dp299
+S'query'
+p300
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p301
+sS'self'
+p302
+S'<gluon.contrib.pymysql.cursors.Cursor object>'
+p303
+sS'result'
+p304
+g99
+sS'self._query'
+p305
+S'<bound method Cursor._query of <gluon.contrib.pymysql.cursors.Cursor object>>'
+p306
+ssg76
+I166
+sg77
+(dp307
+I161
+S'        while self.nextset():'
+p308
+sI162
+S'            pass'
+p309
+sI163
+S''
+sI164
+S'        query = self.mogrify(query, args)'
+p310
+sI165
+S''
+sI166
+S'        result = self._query(query)'
+p311
+sI167
+S'        self._executed = query'
+p312
+sI168
+S'        return result'
+p313
+sI169
+S''
+sI170
+S'    def executemany(self, query, args):'
+p314
+ssg89
+S"(self=<gluon.contrib.pymysql.cursors.Cursor object>, query='SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);', args=None)"
+p315
+sg91
+g296
+sa(dp316
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\cursors.py'
+p317
+sg70
+(dp318
+S'q'
+S"'SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);'"
+p319
+sS'conn.query'
+p320
+S'<bound method Connection.query of <gluon.contrib.pymysql.connections.Connection object>>'
+p321
+sS'conn'
+p322
+S'<gluon.contrib.pymysql.connections.Connection object>'
+p323
+ssg76
+I322
+sg77
+(dp324
+I320
+S'        conn = self._get_db()'
+p325
+sI321
+S'        self._last_executed = q'
+p326
+sI322
+S'        conn.query(q)'
+p327
+sI323
+S'        self._do_get_result()'
+p328
+sI324
+S'        return self.rowcount'
+p329
+sI325
+S''
+sI326
+S'    def _do_get_result(self):'
+p330
+sI317
+S'        self.rownumber = r'
+p331
+sI318
+S''
+sI319
+S'    def _query(self, q):'
+p332
+ssg89
+S"(self=<gluon.contrib.pymysql.cursors.Cursor object>, q='SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);')"
+p333
+sg91
+S'_query'
+p334
+sa(dp335
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py'
+p336
+sg70
+(dp337
+S'self._read_query_result'
+p338
+S'<bound method Connection._read_query_result of <...n.contrib.pymysql.connections.Connection object>>'
+p339
+sS'self'
+p340
+S'<gluon.contrib.pymysql.connections.Connection object>'
+p341
+sS'unbuffered'
+p342
+S'False'
+p343
+sS'self._affected_rows'
+p344
+S'1'
+ssg76
+I835
+sg77
+(dp345
+I832
+S'            else:'
+p346
+sI833
+S"                sql = sql.encode(self.encoding, 'surrogateescape')"
+p347
+sI834
+S'        self._execute_command(COMMAND.COM_QUERY, sql)'
+p348
+sI835
+S'        self._affected_rows = self._read_query_result(unbuffered=unbuffered)'
+p349
+sI836
+S'        return self._affected_rows'
+p350
+sI837
+S''
+sI838
+S'    def next_result(self, unbuffered=False):'
+p351
+sI839
+S'        self._affected_rows = self._read_query_result(unbuffered=unbuffered)'
+p352
+sI830
+S'            if PY2:'
+p353
+sI831
+S'                sql = sql.encode(self.encoding)'
+p354
+ssg89
+S"(self=<gluon.contrib.pymysql.connections.Connection object>, sql='SELECT `endpoint_agents`.`endpoint_id`, `endpoin...RE (`endpoint_agents`.`endpoint_id` IS NOT NULL);', unbuffered=False)"
+p355
+sg91
+S'query'
+p356
+sa(dp357
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py'
+p358
+sg70
+(dp359
+S'result.read'
+p360
+S'<bound method MySQLResult.read of <gluon.contrib.pymysql.connections.MySQLResult object>>'
+p361
+sS'result'
+p362
+S'<gluon.contrib.pymysql.connections.MySQLResult object>'
+p363
+ssg76
+I1019
+sg77
+(dp364
+I1014
+S'                result.unbuffered_active = False'
+p365
+sI1015
+S'                result.connection = None'
+p366
+sI1016
+S'                raise'
+p367
+sI1017
+S'        else:'
+p368
+sI1018
+S'            result = MySQLResult(self)'
+p369
+sI1019
+S'            result.read()'
+p370
+sI1020
+S'        self._result = result'
+p371
+sI1021
+S'        if result.server_status is not None:'
+p372
+sI1022
+S'            self.server_status = result.server_status'
+p373
+sI1023
+S'        return result.affected_rows'
+p374
+ssg89
+S'(self=<gluon.contrib.pymysql.connections.Connection object>, unbuffered=False)'
+p375
+sg91
+S'_read_query_result'
+p376
+sa(dp377
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py'
+p378
+sg70
+(dp379
+S'first_packet'
+p380
+g99
+sS'self'
+p381
+S'<gluon.contrib.pymysql.connections.MySQLResult object>'
+p382
+sS'self.connection'
+p383
+S'None'
+p384
+sS'self.connection._read_packet'
+p385
+g99
+ssg76
+I1302
+sg77
+(dp386
+I1297
+S'        if self.unbuffered_active:'
+p387
+sI1298
+S'            self._finish_unbuffered_query()'
+p388
+sI1299
+S''
+sI1300
+S'    def read(self):'
+p389
+sI1301
+S'        try:'
+p390
+sI1302
+S'            first_packet = self.connection._read_packet()'
+p391
+sI1303
+S''
+sI1304
+S'            if first_packet.is_ok_packet():'
+p392
+sI1305
+S'                self._read_ok_packet(first_packet)'
+p393
+sI1306
+S'            elif first_packet.is_load_local_packet():'
+p394
+ssg89
+S'(self=<gluon.contrib.pymysql.connections.MySQLResult object>)'
+p395
+sg91
+S'read'
+p396
+sa(dp397
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py'
+p398
+sg70
+(dp399
+S'packet'
+p400
+S'<gluon.contrib.pymysql.connections.MysqlPacket object>'
+p401
+sS'packet.check_error'
+p402
+S'<bound method MysqlPacket.check_error of <gluon.contrib.pymysql.connections.MysqlPacket object>>'
+p403
+ssg76
+I981
+sg77
+(dp404
+I976
+S'                continue'
+p405
+sI977
+S'            if bytes_to_read < MAX_PACKET_LEN:'
+p406
+sI978
+S'                break'
+p407
+sI979
+S''
+sI980
+S'        packet = packet_type(buff, self.encoding)'
+p408
+sI981
+S'        packet.check_error()'
+p409
+sI982
+S'        return packet'
+p410
+sI983
+S''
+sI984
+S'    def _read_bytes(self, num_bytes):'
+p411
+sI985
+S'        self._sock.settimeout(self._read_timeout)'
+p412
+ssg89
+S"(self=<gluon.contrib.pymysql.connections.Connection object>, packet_type=<class 'gluon.contrib.pymysql.connections.MysqlPacket'>)"
+p413
+sg91
+S'_read_packet'
+p414
+sa(dp415
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py'
+p416
+sg70
+(dp417
+S'self._data'
+p418
+S'"\\xff\\x1e\\x04#42S22Unknown column \'endpoint_agents.version_os\' in \'field list\'"'
+p419
+sS'self'
+p420
+S'<gluon.contrib.pymysql.connections.MysqlPacket object>'
+p421
+sS'global err'
+p422
+S"<module 'gluon.contrib.pymysql.err' from 'C:\\Use...s\\untitled\\web2py\\gluon\\contrib\\pymysql\\err.pyc'>"
+p423
+sS'err.raise_mysql_exception'
+p424
+S'<function raise_mysql_exception>'
+p425
+ssg76
+I393
+sg77
+(dp426
+I388
+S'        if self.is_error_packet():'
+p427
+sI389
+S'            self.rewind()'
+p428
+sI390
+S'            self.advance(1)  # field_count == error (we already know that)'
+p429
+sI391
+S'            errno = self.read_uint16()'
+p430
+sI392
+S'            if DEBUG: print("errno =", errno)'
+p431
+sI393
+S'            err.raise_mysql_exception(self._data)'
+p432
+sI394
+S''
+sI395
+S'    def dump(self):'
+p433
+sI396
+S'        dump_packet(self._data)'
+p434
+sI397
+S''
+ssg89
+S'(self=<gluon.contrib.pymysql.connections.MysqlPacket object>)'
+p435
+sg91
+S'check_error'
+p436
+sa(dp437
+g68
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\err.py'
+p438
+sg70
+(dp439
+S'errorclass'
+p440
+S"<class 'gluon.contrib.pymysql.err.InternalError'>"
+p441
+sS'errno'
+p442
+S'1054'
+p443
+sS'errval'
+p444
+S'u"Unknown column \'endpoint_agents.version_os\' in \'field list\'"'
+p445
+ssg76
+I107
+sg77
+(dp446
+I98
+S'def raise_mysql_exception(data):'
+p447
+sI99
+S"    errno = struct.unpack('<h', data[1:3])[0]"
+p448
+sI100
+S'    is_41 = data[3:4] == b"#"'
+p449
+sI101
+S'    if is_41:'
+p450
+sI102
+S'        # client protocol 4.1'
+p451
+sI103
+S"        errval = data[9:].decode('utf-8', 'replace')"
+p452
+sI104
+S'    else:'
+p453
+sI105
+S"        errval = data[3:].decode('utf-8', 'replace')"
+p454
+sI106
+S'    errorclass = error_map.get(errno, InternalError)'
+p455
+sI107
+S'    raise errorclass(errno, errval)'
+p456
+ssg89
+S'(data="\\xff\\x1e\\x04#42S22Unknown column \'endpoint_agents.version_os\' in \'field list\'")'
+p457
+sg91
+S'raise_mysql_exception'
+p458
+sasS'pyver'
+p459
+S'Python 2.7.13: C:\\python27-x64\\python.exe (prefix: C:\\python27-x64)'
+p460
+sS'session'
+p461
+g63
+(S's\xd5\x08\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">action</td><td style="vertical-align:top;">:</td><td><div>endpoints</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">avgendpoints</td><td style="vertical-align:top;">:</td><td><div>0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">avgsensors</td><td style="vertical-align:top;">:</td><td><div>0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.users.email!=&quot;&quot;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">showtable</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">License_count_endpoint</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">License_count_sensors</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>subscriber@subscriber.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">firstname</td><td style="vertical-align:top;">:</td><td><div>subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">lastname</td><td style="vertical-align:top;">:</td><td><div>subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">password</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">username</td><td style="vertical-align:top;">:</td><td><div>subscriber</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">usertype</td><td style="vertical-align:top;">:</td><td><div>2L</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">vars</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr></table></div>'
+tRp462
+sS'etype'
+p463
+S"<class 'gluon.contrib.pymysql.err.InternalError'>"
+p464
+sS'date'
+p465
+S'Sun Apr 22 03:47:25 2018'
+p466
+sS'response'
+p467
+g63
+(S's{=\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x000000000F14CE30&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_darkcloud1</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap4_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/darkcloud1/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/darkcloud1</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Controller</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>View</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/views/default/subscriber.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>DB Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Menu Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Stylesheet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/darkcloud1/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/darkcloud1/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errors</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/darkcloud1</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>About</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/darkcloud1</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Support</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Quick Examples</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Videos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Free Applications</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Preface</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introduction</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Overview</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Forms and Validators</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email and SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Access Control</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Services</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ajax Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Components and Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Deployment Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Other Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Groups</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Live Chat</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>web2py</div></td></tr><tr><td><div>python</div></td></tr><tr><td><div>framework</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/subscriber/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_darkcloud1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;C:\\\\Users\\\\hd\\\\PycharmProjects\\\\untitled\\\\web2py\\\\applications\\\\darkcloud1\\\\sessions\\\\092\\\\1ec\\\\127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421&#x27;, mode &#x27;rb+&#x27; at 0x000000000F4A35D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\sessions\\127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>96412155493408466938dfa6f48c90f7</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-3409330e-f8df-496c-b78c-a7fffbf52421</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_darkcloud1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>darkcloud1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/subscriber.html</div></td></tr></table></div>'
+tRp468
+sS'locals'
+p469
+(dp470
+S'errorclass'
+p471
+S"<class 'gluon.contrib.pymysql.err.InternalError'>"
+p472
+sS'errno'
+p473
+S'1054'
+p474
+sS'is_41'
+p475
+S'True'
+p476
+sS'errval'
+p477
+S'u"Unknown column \'endpoint_agents.version_os\' in \'field list\'"'
+p478
+sS'data'
+p479
+S'"\\xff\\x1e\\x04#42S22Unknown column \'endpoint_agents.version_os\' in \'field list\'"'
+p480
+sssS'traceback'
+p481
+S'Traceback (most recent call last):\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers/default.py", line 221, in <module>\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\globals.py", line 419, in <lambda>\n    self._caller = lambda f: f()\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\applications\\darkcloud1\\controllers/default.py", line 132, in subscriber\n    devicestemp = db(db.endpoint_agents).select(db.endpoint_agents.ALL)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\objects.py", line 2250, in select\n    return adapter.select(self.query, fields, attributes)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py", line 762, in select\n    return self._select_aux(sql, fields, attributes, colnames)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py", line 718, in _select_aux\n    rows = self._select_aux_execute(sql)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py", line 712, in _select_aux_execute\n    self.execute(sql)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\__init__.py", line 67, in wrap\n    return f(*args, **kwargs)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py", line 412, in execute\n    rv = self.cursor.execute(command, *args[1:], **kwargs)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\cursors.py", line 166, in execute\n    result = self._query(query)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\cursors.py", line 322, in _query\n    conn.query(q)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py", line 835, in query\n    self._affected_rows = self._read_query_result(unbuffered=unbuffered)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py", line 1019, in _read_query_result\n    result.read()\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py", line 1302, in read\n    first_packet = self.connection._read_packet()\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py", line 981, in _read_packet\n    packet.check_error()\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\connections.py", line 393, in check_error\n    err.raise_mysql_exception(self._data)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\contrib\\pymysql\\err.py", line 107, in raise_mysql_exception\n    raise errorclass(errno, errval)\nInternalError: (1054, u"Unknown column \'endpoint_agents.version_os\' in \'field list\'")\n'
+p482
+s.

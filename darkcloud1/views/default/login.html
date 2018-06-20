@@ -1,0 +1,35 @@
+{{extend 'layout.html'}}
+ <div class="login-box">
+         <div class="login-logo" style="width:500px;position: relative;right:100px;down:150px;">
+             <img src="{{=URL('static','images/DC.png')}}" style="width:150px;height:150px;">
+
+             <a href="#" ><b>Dark</b>Cloud</a>
+         </div>
+      <div class="login-box-body" style="position: relative;down:150px;">
+
+          {{=form.custom.begin}}
+          {{form.custom['_class']='form-group has-feedback'}}
+          <div class="form-group has-feedback">
+               <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+              Email: {{form.custom.widget.email['_class']="form-control"}}
+          {{=form.custom.widget.email}}
+          </div>
+<div class="form-group has-feedback">
+Password: {{form.custom.widget.password['_class']="form-control"}}
+          {{=form.custom.widget.password}}
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+</div>
+    {{form.custom.submit['_class']='btn btn-primary btn-block btn-flat'}}
+              {{form.custom.submit['_value']='Log in'}}
+          {{=form.custom.submit}}
+
+     {{=form.custom.end}}
+          {{pass}}
+
+    <a href="#">I forgot my password</a><br>
+{{=message1}}
+          {{=message}}
+
+      </div>
+         </div>
+

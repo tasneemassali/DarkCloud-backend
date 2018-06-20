@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+    <!-- Always force latest IE rendering engine
+         (even in intranet) & Chrome Frame
+         Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+    <!--  Mobile Viewport Fix
+          j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+          device-width: Occupy full width of the screen in its current orientation
+          initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+          user-scalable = yes allows the user to zoom in -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{=response.title or request.application}}</title>
+    <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+    <meta name="application-name" content="{{=request.application}}">
+    <!-- Speaking of Google, don't forget to set your site up:
+         http://google.com/webmasters -->
+    <meta name="google-site-verification" content="">
+
+
+      <!--Tasneem includes-->
+      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+       <link rel="stylesheet" href="{{=URL('static','bower_components/bootstrap/dist/css/bootstrap.min.css')}}"/>
+  <!-- Font Awesome -->
+      <link rel="stylesheet" href="{{=URL('static','bower_components/font-awesome/css/font-awesome.min.css')}}"/>
+
+  <!-- Ionicons -->
+       <link rel="stylesheet" href="{{=URL('static','bower_components/Ionicons/css/ionicons.min.css')}}"/>
+
+  <!-- Theme style -->
+       <link rel="stylesheet" href="{{=URL('static','dist/css/AdminLTE.min.css')}}"/>
+  <!-- iCheck -->
+       <link rel="stylesheet" href="{{=URL('static','plugins/iCheck/square/blue.css')}}"/>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+<!----------------------------------------------->
+  </head>
+  <body class="hold-transition login-page">
+  <!-- Navbar ======================================= -->
+    <!-- Main ========================================= -->
+    <!-- Begin page content -->
+    <div class="container-fluid main-container">
+        {{include}}
+    </div>
+
+    <!-- Share ============================y============ -->
+    <script src="{{=URL('static','js/share.js',vars=dict(static=URL('static','images')))}}"></script>
+  <!-- jQuery 3 -->
+<script src="{{=URL('static','bower_components/jquery/dist/jquery.min.js')}}">
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="{{=URL('static','bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<!-- iCheck -->
+<script src="{{=URL('static','plugins/iCheck/icheck.min.js')}}"></script>
+  </body>
+</html>

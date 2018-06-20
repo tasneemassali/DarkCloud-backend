@@ -1,0 +1,389 @@
+(dp1
+S'output'
+p2
+S'missing "pass" in view'
+p3
+sS'layer'
+p4
+S'ParserContainer'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\r\\n<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="\', escape=False)\nresponse.write(T.accepted_language or \'en\')\nresponse.write(\'"> <!--<![endif]-->\\r\\n  <head>\\r\\n    <meta charset="utf-8">\\r\\n    <meta http-equiv="X-UA-Compatible" content="IE=edge\', escape=False)\nresponse.write(not request.is_local and \',chrome=1\' or \'\')\nresponse.write(\'">\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\\r\\n    <title>\', escape=False)\nresponse.write(response.title or request.application)\nresponse.write(\'</title>\\r\\n    <meta name="application-name" content="\', escape=False)\nresponse.write(request.application)\nresponse.write(\'">\\r\\n    <meta name="google-site-verification" content="">\\r\\n\\r\\n<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">\\r\\n\\r\\n      <!-- AdminLTE Skins. Choose a skin from the css/skins\\r\\n       folder instead of downloading all of them to reduce the load. -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'dist/css/skins/_all-skins.min.css\'))\nresponse.write(\'">\\r\\n  <!-- Morris chart -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/morris.js/morris.css\'))\nresponse.write(\'">\\r\\n  <!-- jvectormap -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/jvectormap/jquery-jvectormap.css\'))\nresponse.write(\'">\\r\\n  <!-- Date Picker -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css\'))\nresponse.write(\'">\\r\\n  <!-- Daterange picker -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/bootstrap-daterangepicker/daterangepicker.css\'))\nresponse.write(\'">\\r\\n  <!-- bootstrap wysihtml5 - text editor -->\\r\\n  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css\'))\nresponse.write(\'">\\r\\n\\r\\n      <!--Tasneem includes-->\\r\\n      <script type="text/javascript" src="scripts/jquery.js"></script>\\r\\n<!--[if lte IE 9]>\\r\\n<script src="scripts/IE9.js"></script>\\r\\n<![endif]-->\\r\\n      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>\\r\\n       <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/bootstrap/dist/css/bootstrap.min.css\'))\nresponse.write(\'"/>\\r\\n  <!-- Font Awesome -->\\r\\n      <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/font-awesome/css/font-awesome.min.css\'))\nresponse.write(\'"/>\\r\\n\\r\\n  <!-- Ionicons -->\\r\\n       <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'bower_components/Ionicons/css/ionicons.min.css\'))\nresponse.write(\'"/>\\r\\n\\r\\n  <!-- Theme style -->\\r\\n       <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'dist/css/AdminLTE.min.css\'))\nresponse.write(\'"/>\\r\\n  <!-- iCheck -->\\r\\n       <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'plugins/iCheck/square/blue.css\'))\nresponse.write(\'"/>\\r\\n <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">\\r\\n\\r\\n<!----------------------------------------------->\\r\\n  </head>\\r\\n  <body class="hold-transition skin-blue sidebar-mini">\\r\\n  <!-- Navbar ======================================= -->\\r\\n    <!-- Main ========================================= -->\\r\\n    <!-- Begin page content -->\\r\\n    <div class="container-fluid main-container">\\r\\n        \', escape=False)\nresponse.write(\'\\r\\n<div class="wrapper" >\\r\\n\\r\\n  <header class="main-header">\\r\\n    <!-- Logo -->\\r\\n    <a href="#" class="logo">\\r\\n      <!-- mini logo for sidebar mini 50x50 pixels -->\\r\\n      <span class="logo-mini"><b>D</b>C</span>\\r\\n      <!-- logo for regular state and mobile devices -->\\r\\n        <img src="\', escape=False)\nresponse.write(URL(\'static\',\'images/DC.png\'))\nresponse.write(\'" style="width:60px;height:60px;float:left;">\\r\\n      <span class="logo-lg"><b>Dark</b>Cloud</span>\\r\\n    </a>\\r\\n    <!-- Header Navbar: style can be found in header.less -->\\r\\n    <nav class="navbar navbar-static-top">\\r\\n      <!-- Sidebar toggle button-->\\r\\n      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">\\r\\n        <span class="sr-only">Toggle navigation</span>\\r\\n      </a>\\r\\n\\r\\n      <div class="navbar-custom-menu">\\r\\n        <ul class="nav navbar-nav">\\r\\n\\r\\n          <!-- Notifications: style can be found in dropdown.less -->\\r\\n          <li class="dropdown notifications-menu">\\r\\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\\r\\n              <i class="fa fa-bell-o"></i>\\r\\n              <span class="label label-warning">10</span>\\r\\n            </a>\\r\\n            <ul class="dropdown-menu">\\r\\n              <li class="header">You have 10 notifications</li>\\r\\n              <li>\\r\\n                <!-- inner menu: contains the actual data -->\\r\\n                <ul class="menu">\\r\\n                  <li>\\r\\n                    <a href="#">\\r\\n                      <i class="fa fa-users text-aqua"></i> 5 new members joined today\\r\\n                    </a>\\r\\n                  </li>\\r\\n                  <li>\\r\\n                    <a href="#">\\r\\n                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the\\r\\n                      page and may cause design problems\\r\\n                    </a>\\r\\n                  </li>\\r\\n\\r\\n                </ul>\\r\\n              </li>\\r\\n              <li class="footer"><a href="#">View all</a></li>\\r\\n            </ul>\\r\\n          </li>\\r\\n\\r\\n\\r\\n\\r\\n          <!-- User Account: style can be found in dropdown.less -->\\r\\n          <li class="dropdown user user-menu">\\r\\n            <a href="#" class="dropdown-toggle" data-toggle="dropdown">\\r\\n                  <span class="hidden-xs">\', escape=False)\nresponse.write(user)\nresponse.write(\'</span>\\r\\n            </a>\\r\\n            <ul class="dropdown-menu">\\r\\n              <!-- User image -->\\r\\n              <li class="user-header">\\r\\n                <img src="\', escape=False)\nresponse.write(URL(\'static\',\'dist/img/u.jpg\'))\nresponse.write(\'" class="img-circle" alt="User Image">\\r\\n\\r\\n                <p>\\r\\n                 \', escape=False)\nresponse.write(user)\nresponse.write(\'\\r\\n                  <small>last online</small>\\r\\n                </p>\\r\\n              </li>\\r\\n\\r\\n              <!-- Menu Footer-->\\r\\n              <li class="user-footer">\\r\\n                <div class="pull-left">\\r\\n                  <a href="#" class="btn btn-default btn-flat">Profile</a>\\r\\n                </div>\\r\\n                <div class="pull-right">\\r\\n                  <a href="\', escape=False)\nresponse.write(URL(f=\'signout\'))\nresponse.write(\'" class="btn btn-default btn-flat">Sign out</a>\\r\\n                </div>\\r\\n              </li>\\r\\n            </ul>\\r\\n          </li>\\r\\n\\r\\n\\r\\n        </ul>\\r\\n      </div>\\r\\n    </nav>\\r\\n  </header>\\r\\n  <!-- Left side column. contains the logo and sidebar -->\\r\\n  <aside class="main-sidebar">\\r\\n    <!-- sidebar: style can be found in sidebar.less -->\\r\\n    <section class="sidebar">\\r\\n      <!-- Sidebar user panel -->\\r\\n      <div class="user-panel">\\r\\n         <div class="pull-left image">\\r\\n          <img src="\', escape=False)\nresponse.write(URL(\'static\',\'dist/img/u.jpg\'))\nresponse.write(\'" class="img-circle" alt="User Image">\\r\\n        </div>\\r\\n        <div class="pull-left info">\\r\\n          <p>\', escape=False)\nresponse.write(user)\nresponse.write(\'</p>\\r\\n          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>\\r\\n        </div>\\r\\n      </div>\\r\\n      <!-- search form -->\\r\\n      <form action="#" method="get" class="sidebar-form">\\r\\n        <div class="input-group">\\r\\n          <input type="text" name="q" class="form-control" placeholder="Search...">\\r\\n          <span class="input-group-btn">\\r\\n                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>\\r\\n                </button>\\r\\n              </span>\\r\\n        </div>\\r\\n      </form>\\r\\n      <!-- /.search form -->\\r\\n      <!-- sidebar menu: : style can be found in sidebar.less -->\\r\\n      <ul class="sidebar-menu" data-widget="tree">\\r\\n        <li class="treeview">\\r\\n          <a href="">\\r\\n            <i class="fa  fa-users"></i>\\r\\n            <span>Endpoints</span>\\r\\n            <span class="pull-right-container">\\r\\n\\t\\t\\t <i class="fa fa-angle-left pull-right"></i>\\r\\n            </span>\\r\\n          </a>\\r\\n          <ul class="treeview-menu">\\r\\n            <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'add_endpoints\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> Add new endpoint</a></li>\\r\\n            <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'endpoints\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> View Current Endpoints</a></li>\\r\\n            <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'submissions\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> View Executables Submission</a></li>\\r\\n             </ul>\\r\\n        </li>\\r\\n           <li>\\r\\n          <a href="\', escape=False)\nresponse.write(URL(\'subscriber\',args=[\'sensors\']))\nresponse.write(\'">\\r\\n            <i class="fa  fa-cogs"></i>\\r\\n            <span>Sensors</span>\\r\\n               <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'add_sensors\']))\nresponse.write(\'" ><i class="fa fa-circle-o"></i> Add new Sensor</a></li>\\r\\n            <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'sensors\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> View Current Sensors</a></li>\\r\\n            <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',args=[\'sensors_statistics\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> View Sensors Statistics</a></li>\\r\\n\\r\\n          </a>\\r\\n               <a href="\', escape=False)\nresponse.write(URL(\'subscriber\',args=[\'query\']))\nresponse.write(\'">\\r\\n            <i class="fa  fa-bar-chart-o"></i>\\r\\n            <span>Query</span>\\r\\n                    <li><a href="\', escape=False)\nresponse.write(URL(f=\'subscriber\',vars=dict(showtable=1),args=[\'query\']))\nresponse.write(\'"><i class="fa fa-circle-o"></i> Search with hashes</a></li>\\r\\n          </a>\\r\\n\\r\\n           <a href="\', escape=False)\nresponse.write(URL(\'subscriber\',args=[\'events\']))\nresponse.write(\'">\\r\\n            <i class="fa  fa-bar-chart-o"></i>\\r\\n            <span>Events</span>\\r\\n               </a>\\r\\n        </li>\\r\\n      </ul>\\r\\n    </section>\\r\\n    <!-- /.sidebar -->\\r\\n  </aside>\\r\\n  <!-- Content Wrapper. Contains page content -->\\r\\n  <div class="content-wrapper">\\r\\n    <!-- Content Header (Page header) -->\\r\\n    <section class="content-header">\\r\\n      <h1>\\r\\n        All \', escape=False)\nresponse.write(usertype)\nresponse.write(\'\\r\\n        <small>View and Edit</small>\\r\\n      </h1>\\r\\n        <!--user view for user management-->\\r\\n\\r\\n         <ol class="breadcrumb">\\r\\n        <li><a href="#" ><i class="fa fa-dashboard"></i> Home</a></li>\\r\\n        <li class="active">\', escape=False)\nresponse.write(usertype)\nresponse.write(\'</li>\\r\\n      </ol>\\r\\n    </section>\\r\\n <div class="box-header">\\r\\n            <!--  <span class="pull-right-container" style="float:right;">\\r\\n                 <a href="#" id="add3"> <i class="fa fa-plus">Add</i></a>\\r\\n              </span>-->\\r\\n                </div>\\r\\n\\r\\n        \', escape=False)\nif session[\'action\']==\'add_sensors\' or session[\'action\']==\'add_endpoints\':\n    response.write(\'\\r\\n             <div class="tab-pane" style="display:none;">\\r\\n                     <span class="close">&times;</span>\\r\\n                  \', escape=False)\n    response.write(form)\n    response.write(\'\\r\\n                </div>\\r\\n      \', escape=False)\nelse:\n    response.write(\'\\r\\n    <!-- Main content -->\\r\\n    <section class="content">\\r\\n      <div class="row">\\r\\n        <div class="col-xs-12">\\r\\n          <div class="box">\\r\\n\\r\\n            \', escape=False)\n    if session[\'action\']==\'sensors\' or session[\'action\']==\'endpoints\':\n        response.write(\'\\r\\n                <div class="box-body" id="sensors" style="display: block;">\\r\\n              <table id="example2" class="table table-bordered table-hover">\\r\\n                <thead>\\r\\n                <tr>\\r\\n                  <th>IP</th>\\r\\n                  <th>Owner ID</th>\\r\\n                    \', escape=False)\n        if session[\'action\']==\'endpoints\':\n            response.write(\'\\r\\n                    <th>OS version</th>\\r\\n                  \', escape=False)\n            pass\n        response.write(\'\\r\\n                  <th>Enrollement Timestamp</th>\\r\\n                  <th>Enrolled Flag</th>\\r\\n                </tr>\\r\\n                </thead>\\r\\n                <tbody>\\r\\n                \', escape=False)\n        for row in devicestemp:\n            response.write(\'\\r\\n                <tr>\\r\\n                  <td>\', escape=False)\n            response.write(row.ip)\n            response.write(\'</td>\\r\\n                  <td>\\r\\n                  \', escape=False)\n            response.write(row.owner_ID)\n            response.write(\'\\r\\n                  </td>\\r\\n                    \', escape=False)\n            if session[\'action\']==\'endpoints\':\n                response.write(\'\\r\\n                  <td>\', escape=False)\n                response.write(row.os_version)\n                response.write(\'</td>\\r\\n                    \', escape=False)\n                pass\n            response.write(\'\\r\\n                  <td>\', escape=False)\n            response.write(row.enrollement_stamp)\n            response.write(\'</td>\\r\\n                  <td> \', escape=False)\n            response.write(row.enrolled_flag)\n            response.write(\'\\r\\n                  <span style="float:right;">\\r\\n                 <a href="\', escape=False)\n            response.write(URL(f=\'subscriber\',vars={\'deletid\':row.id},args=[\'device\']))\n            response.write(\'"> <i class="fa fa-minus-square" style="color:red;"></i></a>\\r\\n                  </span></td>\\r\\n                     </tr>\\r\\n                    \', escape=False)\n            pass\n        response.write(\'\\r\\n\\r\\n          </tbody></table>  </div>\\r\\n\\r\\n                \', escape=False)\n    elif session[\'action\']==\'submissions\':\n        response.write(\'\\r\\n                <div class="box-body" id="submission" style="display: block;">\\r\\n              <table id="example2" class="table table-bordered table-hover">\\r\\n                <thead>\\r\\n                <tr>\\r\\n                  <th>Submitter</th>\\r\\n                  <th>Type</th>\\r\\n                    <th>File hash</th>\\r\\n                    <th>Timestamp</th>\\r\\n                  <th>Domain</th>\\r\\n                    <th>source</th>\\r\\n                    <th>destination</th>\\r\\n                    <th>protocol</th>\\r\\n\\r\\n                </tr>\\r\\n                </thead>\\r\\n                <tbody>\\r\\n                \', escape=False)\n        for row in devicestemp:\n            response.write(\'\\r\\n                <tr>\\r\\n                  <td>\', escape=False)\n            response.write(row.submitter_id)\n            response.write(\'</td>\\r\\n                  <td>\\r\\n                  \', escape=False)\n            response.write(row.submitter_type)\n            response.write(\'\\r\\n                  </td>\\r\\n                  <td>\', escape=False)\n            response.write(row.submitted_filehash)\n            response.write(\'</td>\\r\\n\\r\\n                  <td>\', escape=False)\n            response.write(row.submitted_timestamp)\n            response.write(\'</td>\\r\\n                    <td> \', escape=False)\n            response.write(row.submitted_domain)\n            response.write(\'</td>\\r\\n\\r\\n                    \', escape=False)\n            if row.submitted_domain==\'mail\':\n                response.write(\'\\r\\n                    <td> \', escape=False)\n                response.write(row.sent_to)\n                response.write(\'</td>\\r\\n                    <td> \', escape=False)\n                response.write(row.sent_from)\n                response.write(\'</td>\\r\\n                    \', escape=False)\n            elif row.submitted_domain==\'web\':\n                response.write(\'\\r\\n                    <td> \', escape=False)\n                response.write(row.src_address)\n                response.write(\'</td>\\r\\n                    <td> \', escape=False)\n                response.write(row.dst_address)\n                response.write(\'</td>\\r\\n                    \', escape=False)\n                pass\n            response.write(\'\\r\\n                  <td> \', escape=False)\n            response.write(row.protocol)\n            response.write(\'</td>\\r\\n                     </tr>\\r\\n                    \', escape=False)\n            pass\n        response.write(\'\\r\\n          </tbody></table>  </div></div>\\r\\n                <!-- /.box-header -->\\r\\n        </div></div></section></div></div>\\r\\n\\r\\n       \', escape=False)\n    elif session[\'action\']==\'sensors_statistics\':\n        response.write(\'\\r\\n      <div class="box box-primary">\\r\\n            <div class="box-header with-border">\\r\\n              <i class="fa fa-bar-chart-o"></i>\\r\\n              <h3 class="box-title">Sensors Statistics</h3>\\r\\n              <div class="box-tools pull-right">\\r\\n                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>\\r\\n                </button>\\r\\n                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>\\r\\n              </div>\\r\\n            </div>\\r\\n            <div class="box-body">\\r\\n              <div id="donut-chart" style="height: 300px;"></div>\\r\\n            </div>\\r\\n            <!-- /.box-body-->\\r\\n          </div>\\r\\n        \', escape=False)\n        pass\n    response.write(\'\\r\\n        </div></div>\\r\\n\\r\\n<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>\\r\\n\\r\\n <script>\\r\\n var modal = document.getElementById(\\\'add\\\');\\r\\n// var modal1 = document.getElementById(\\\'addModal1\\\');\\r\\nvar content=document.getElementById(\\\'contentModal\\\');\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("addendpoint");\\r\\nvar btn1 = document.getElementById("addsensor");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n// When the user clicks on the button, open the modal\\r\\n\\r\\n    btn.onclick = function() {\\r\\n        modal.style.display = "block";\\r\\n    }\\r\\n    btn1.onclick = function() {\\r\\n        modal.style.display = "block";\\r\\n    }\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n\\r\\n}\\r\\n// When the user clicks on <span> (x), close the modal\\r\\n\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\n\\r\\n\\r\\n\\r\\n<!-- Page script -->\\r\\n  $(function () {\\r\\n    /*\\r\\n     * Flot Interactive Chart\\r\\n     * -----------------------\\r\\n     */\\r\\n    // We use an inline data source in the example, usually data would\\r\\n    // be fetched from a server\\r\\n    var data = [], totalPoints = 100\\r\\n\\r\\n    function getRandomData() {\\r\\n\\r\\n      if (data.length > 0)\\r\\n        data = data.slice(1)\\r\\n\\r\\n      // Do a random walk\\r\\n      while (data.length < totalPoints) {\\r\\n\\r\\n        var prev = data.length > 0 ? data[data.length - 1] : 50,\\r\\n            y    = prev + Math.random() * 10 - 5\\r\\n\\r\\n        if (y < 0) {\\r\\n          y = 0\\r\\n        } else if (y > 100) {\\r\\n          y = 100\\r\\n        }\\r\\n\\r\\n        data.push(y)\\r\\n      }\\r\\n\\r\\n      // Zip the generated y values with the x values\\r\\n      var res = []\\r\\n      for (var i = 0; i < data.length; ++i) {\\r\\n        res.push([i, data[i]])\\r\\n      }\\r\\n\\r\\n      return res\\r\\n    }\\r\\n\\r\\n    var interactive_plot = $.plot(\\\'#interactive\\\', [getRandomData()], {\\r\\n      grid  : {\\r\\n        borderColor: \\\'#f3f3f3\\\',\\r\\n        borderWidth: 1,\\r\\n        tickColor  : \\\'#f3f3f3\\\'\\r\\n      },\\r\\n      series: {\\r\\n        shadowSize: 0, // Drawing is faster without shadows\\r\\n        color     : \\\'#3c8dbc\\\'\\r\\n      },\\r\\n      lines : {\\r\\n        fill : true, //Converts the line chart to area chart\\r\\n        color: \\\'#3c8dbc\\\'\\r\\n      },\\r\\n      yaxis : {\\r\\n        min : 0,\\r\\n        max : 100,\\r\\n        show: true\\r\\n      },\\r\\n      xaxis : {\\r\\n        show: true\\r\\n      }\\r\\n    })\\r\\n\\r\\n    var updateInterval = 500 //Fetch data ever x milliseconds\\r\\n    var realtime       = \\\'on\\\' //If == to on then fetch data every x seconds. else stop fetching\\r\\n    function update() {\\r\\n\\r\\n      interactive_plot.setData([getRandomData()])\\r\\n\\r\\n      // Since the axes don\\\'t change, we don\\\'t need to call plot.setupGrid()\\r\\n      interactive_plot.draw()\\r\\n      if (realtime === \\\'on\\\')\\r\\n        setTimeout(update, updateInterval)\\r\\n    }\\r\\n\\r\\n    //INITIALIZE REALTIME DATA FETCHING\\r\\n    if (realtime === \\\'on\\\') {\\r\\n      update()\\r\\n    }\\r\\n    //REALTIME TOGGLE\\r\\n    $(\\\'#realtime .btn\\\').click(function () {\\r\\n      if ($(this).data(\\\'toggle\\\') === \\\'on\\\') {\\r\\n        realtime = \\\'on\\\'\\r\\n      }\\r\\n      else {\\r\\n        realtime = \\\'off\\\'\\r\\n      }\\r\\n      update()\\r\\n    })\\r\\n    /*\\r\\n     * END INTERACTIVE CHART\\r\\n     */\\r\\n\\r\\n    /*\\r\\n     * LINE CHART\\r\\n     * ----------\\r\\n     */\\r\\n    //LINE randomly generated data\\r\\n\\r\\n    var sin = [], cos = []\\r\\n    for (var i = 0; i < 14; i += 0.5) {\\r\\n      sin.push([i, Math.sin(i)])\\r\\n      cos.push([i, Math.cos(i)])\\r\\n    }\\r\\n    var line_data1 = {\\r\\n      data : sin,\\r\\n      color: \\\'#3c8dbc\\\'\\r\\n    }\\r\\n    var line_data2 = {\\r\\n      data : cos,\\r\\n      color: \\\'#00c0ef\\\'\\r\\n    }\\r\\n    $.plot(\\\'#line-chart\\\', [line_data1, line_data2], {\\r\\n      grid  : {\\r\\n        hoverable  : true,\\r\\n        borderColor: \\\'#f3f3f3\\\',\\r\\n        borderWidth: 1,\\r\\n        tickColor  : \\\'#f3f3f3\\\'\\r\\n      },\\r\\n      series: {\\r\\n        shadowSize: 0,\\r\\n        lines     : {\\r\\n          show: true\\r\\n        },\\r\\n        points    : {\\r\\n          show: true\\r\\n        }\\r\\n      },\\r\\n      lines : {\\r\\n        fill : false,\\r\\n        color: [\\\'#3c8dbc\\\', \\\'#f56954\\\']\\r\\n      },\\r\\n      yaxis : {\\r\\n        show: true\\r\\n      },\\r\\n      xaxis : {\\r\\n        show: true\\r\\n      }\\r\\n    })\\r\\n    //Initialize tooltip on hover\\r\\n    $(\\\'<div class="tooltip-inner" id="line-chart-tooltip"></div>\\\').css({\\r\\n      position: \\\'absolute\\\',\\r\\n      display : \\\'none\\\',\\r\\n      opacity : 0.8\\r\\n    }).appendTo(\\\'body\\\')\\r\\n    $(\\\'#line-chart\\\').bind(\\\'plothover\\\', function (event, pos, item) {\\r\\n\\r\\n      if (item) {\\r\\n        var x = item.datapoint[0].toFixed(2),\\r\\n            y = item.datapoint[1].toFixed(2)\\r\\n\\r\\n        $(\\\'#line-chart-tooltip\\\').html(item.series.label + \\\' of \\\' + x + \\\' = \\\' + y)\\r\\n          .css({ top: item.pageY + 5, left: item.pageX + 5 })\\r\\n          .fadeIn(200)\\r\\n      } else {\\r\\n        $(\\\'#line-chart-tooltip\\\').hide()\\r\\n      }\\r\\n\\r\\n    })\\r\\n    /* END LINE CHART */\\r\\n\\r\\n    /*\\r\\n     * FULL WIDTH STATIC AREA CHART\\r\\n     * -----------------\\r\\n     */\\r\\n    var areaData = [[2, 88.0], [3, 93.3], [4, 102.0], [5, 108.5], [6, 115.7], [7, 115.6],\\r\\n      [8, 124.6], [9, 130.3], [10, 134.3], [11, 141.4], [12, 146.5], [13, 151.7], [14, 159.9],\\r\\n      [15, 165.4], [16, 167.8], [17, 168.7], [18, 169.5], [19, 168.0]]\\r\\n    $.plot(\\\'#area-chart\\\', [areaData], {\\r\\n      grid  : {\\r\\n        borderWidth: 0\\r\\n      },\\r\\n      series: {\\r\\n        shadowSize: 0, // Drawing is faster without shadows\\r\\n        color     : \\\'#00c0ef\\\'\\r\\n      },\\r\\n      lines : {\\r\\n        fill: true //Converts the line chart to area chart\\r\\n      },\\r\\n      yaxis : {\\r\\n        show: false\\r\\n      },\\r\\n      xaxis : {\\r\\n        show: false\\r\\n      }\\r\\n    })\\r\\n\\r\\n    /* END AREA CHART */\\r\\n\\r\\n    /*\\r\\n     * BAR CHART\\r\\n     * ---------\\r\\n     */\\r\\n\\r\\n    var bar_data = {\\r\\n      data : [[\\\'January\\\', 10], [\\\'February\\\', 8], [\\\'March\\\', 4], [\\\'April\\\', 13], [\\\'May\\\', 17], [\\\'June\\\', 9]],\\r\\n      color: \\\'#3c8dbc\\\'\\r\\n    }\\r\\n    $.plot(\\\'#bar-chart\\\', [bar_data], {\\r\\n      grid  : {\\r\\n        borderWidth: 1,\\r\\n        borderColor: \\\'#f3f3f3\\\',\\r\\n        tickColor  : \\\'#f3f3f3\\\'\\r\\n      },\\r\\n      series: {\\r\\n        bars: {\\r\\n          show    : true,\\r\\n          barWidth: 0.5,\\r\\n          align   : \\\'center\\\'\\r\\n        }\\r\\n      },\\r\\n      xaxis : {\\r\\n        mode      : \\\'categories\\\',\\r\\n        tickLength: 0\\r\\n      }\\r\\n    })\\r\\n    /* END BAR CHART */\\r\\n\\r\\n    /*\\r\\n     * DONUT CHART\\r\\n     * -----------\\r\\n     */\\r\\n\\r\\n    var donutData = [\\r\\n      { label: \\\'Sensors\\\', data: \', escape=False)\n    response.write(session[\'avgsensors\'])\n    response.write(", color: \'#3c8dbc\' },\\r\\n      { label: \'Endpoint Agents\', data: ", escape=False)\n    response.write(session[\'avgendpoints\'])\n    response.write(\', color: \\\'#0073b7\\\' },\\r\\n    ]\\r\\n    $.plot(\\\'#donut-chart\\\', donutData, {\\r\\n      series: {\\r\\n        pie: {\\r\\n          show       : true,\\r\\n          radius     : 1,\\r\\n          innerRadius: 0.5,\\r\\n          label      : {\\r\\n            show     : true,\\r\\n            radius   : 2 / 3,\\r\\n            formatter: labelFormatter,\\r\\n            threshold: 0.1\\r\\n          }\\r\\n\\r\\n        }\\r\\n      },\\r\\n      legend: {\\r\\n        show: false\\r\\n      }\\r\\n    })\\r\\n    /*\\r\\n     * END DONUT CHART\\r\\n     */\\r\\n\\r\\n  })\\r\\n\\r\\n  /*\\r\\n   * Custom Label formatter\\r\\n   * ----------------------\\r\\n   */\\r\\n  function labelFormatter(label, series) {\\r\\n    return \\\'<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">\\\'\\r\\n      + label\\r\\n      + \\\'<br>\\\'\\r\\n      + Math.round(series.percent) + \\\'%</div>\\\'\\r\\n  }\\r\\n\\r\\n</script>\\r\\n\\r\\n\', escape=False)\n    response.write(\'\\r\\n    </div>\\r\\n\\r\\n    <!-- Share ============================y============ -->\\r\\n    <script src="\', escape=False)\n    response.write(URL(\'static\',\'js/share.js\',vars=dict(static=URL(\'static\',\'images\'))))\n    response.write(\'"></script>\\r\\n  <!-- jQuery 3 -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/jquery/dist/jquery.min.js\'))\n    response.write(\'">\\r\\n</script>\\r\\n<!-- Bootstrap 3.3.7 -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/bootstrap/dist/js/bootstrap.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- iCheck -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'plugins/iCheck/icheck.min.js\'))\n    response.write(\'"></script>\\r\\n\\r\\n<!-- jQuery UI 1.11.4 -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/jquery-ui/jquery-ui.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->\\r\\n<script>\\r\\n  $.widget.bridge(\\\'uibutton\\\', $.ui.button);\\r\\n</script>\\r\\n\\r\\n<!-- Morris.js charts -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/raphael/raphael.min.js\'))\n    response.write(\'"></script>\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/morris.js/morris.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- Sparkline -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/jquery-sparkline/dist/jquery.sparkline.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- jvectormap -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js\'))\n    response.write(\'"></script>\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'plugins/jvectormap/jquery-jvectormap-world-mill-en.js\'))\n    response.write(\'"></script>\\r\\n<!-- jQuery Knob Chart -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/jquery-knob/dist/jquery.knob.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- daterangepicker -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/moment/min/moment.min.js\'))\n    response.write(\'"></script>\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/bootstrap-daterangepicker/daterangepicker.js\'))\n    response.write(\'"></script>\\r\\n<!-- datepicker -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- Bootstrap WYSIHTML5 -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- Slimscroll -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/jquery-slimscroll/jquery.slimscroll.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- FastClick -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/fastclick/lib/fastclick.js\'))\n    response.write(\'"></script>\\r\\n<!-- AdminLTE App -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'dist/js/adminlte.min.js\'))\n    response.write(\'"></script>\\r\\n<!-- AdminLTE dashboard demo (This is only for demo purposes) -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'dist/js/pages/dashboard.js\'))\n    response.write(\'"></script>\\r\\n<!-- AdminLTE for demo purposes -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'dist/js/demo.js\'))\n    response.write(\'"></script>\\r\\n\\r\\n\\r\\n\\r\\n  <!-- FLOT CHARTS -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/Flot/jquery.flot.js\'))\n    response.write(\'"></script>\\r\\n<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/Flot/jquery.flot.resize.js\'))\n    response.write(\'"></script>\\r\\n<!-- FLOT PIE PLUGIN - also used to draw donut charts -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/Flot/jquery.flot.pie.js\'))\n    response.write(\'"></script>\\r\\n<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->\\r\\n<script src="\', escape=False)\n    response.write(URL(\'static\',\'bower_components/Flot/jquery.flot.categories.js\'))\n    response.write(\'"></script>\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n  </body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'gluon.rocket'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of SocketTimeout object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of SocketTimeout object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of SocketTimeout object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of SocketTimeout object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'message'
+p26
+S"'Socket timed out before request.'"
+p27
+sS'__init__'
+p28
+S"<method-wrapper '__init__' of SocketTimeout object>"
+p29
+sS'__setattr__'
+p30
+S"<method-wrapper '__setattr__' of SocketTimeout object>"
+p31
+sS'__reduce_ex__'
+p32
+S'<built-in method __reduce_ex__ of SocketTimeout object>'
+p33
+sS'__new__'
+p34
+S'<built-in method __new__ of type object>'
+p35
+sS'__format__'
+p36
+S'<built-in method __format__ of SocketTimeout object>'
+p37
+sS'__class__'
+p38
+S"<class 'gluon.rocket.SocketTimeout'>"
+p39
+sS'__doc__'
+p40
+S"'Exception for when a socket times out between requests.'"
+p41
+sS'__getitem__'
+p42
+S"<method-wrapper '__getitem__' of SocketTimeout object>"
+p43
+sS'__setstate__'
+p44
+S'<built-in method __setstate__ of SocketTimeout object>'
+p45
+sS'__getattribute__'
+p46
+S"<method-wrapper '__getattribute__' of SocketTimeout object>"
+p47
+sS'args'
+p48
+S"('Socket timed out before request.',)"
+p49
+sS'__subclasshook__'
+p50
+S'<built-in method __subclasshook__ of type object>'
+p51
+sS'__unicode__'
+p52
+S'<built-in method __unicode__ of SocketTimeout object>'
+p53
+sS'__delattr__'
+p54
+S"<method-wrapper '__delattr__' of SocketTimeout object>"
+p55
+sS'__repr__'
+p56
+S"<method-wrapper '__repr__' of SocketTimeout object>"
+p57
+sS'__hash__'
+p58
+S"<method-wrapper '__hash__' of SocketTimeout object>"
+p59
+ssS'evalue'
+p60
+S'Socket timed out before request.'
+p61
+sS'frames'
+p62
+(lp63
+(dp64
+S'file'
+p65
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py'
+p66
+sS'dump'
+p67
+(dp68
+S'self'
+p69
+S'<WSGIWorker(Thread-9, started daemon 22960)>'
+p70
+sS'conn'
+p71
+S'<gluon.rocket.Connection object>'
+p72
+sS'self.run_app'
+p73
+S'<bound method WSGIWorker.run_app of <WSGIWorker(Thread-9, started daemon 22960)>>'
+p74
+ssS'lnum'
+p75
+I1319
+sS'lines'
+p76
+(dp77
+I1314
+S'            # Enter connection serve loop'
+p78
+sI1315
+S'            while True:'
+p79
+sI1316
+S'                if __debug__:'
+p80
+sI1317
+S"                    self.err_log.debug('Serving a request')"
+p81
+sI1318
+S'                try:'
+p82
+sI1319
+S'                    self.run_app(conn)'
+p83
+sI1320
+S'                except:'
+p84
+sI1321
+S'                    exc = sys.exc_info()'
+p85
+sI1322
+S'                    handled = self._handleError(*exc)'
+p86
+sI1323
+S'                    if handled:'
+p87
+ssS'call'
+p88
+S'(self=<WSGIWorker(Thread-9, started daemon 22960)>)'
+p89
+sS'func'
+p90
+S'run'
+p91
+sa(dp92
+g65
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py'
+p93
+sg67
+(dp94
+S'self'
+p95
+S'<WSGIWorker(Thread-9, started daemon 22960)>'
+p96
+sS'self.environ'
+p97
+S"{'HTTP_ACCEPT': 'text/html, application/xhtml+xml, image/jxr, */*', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate', 'HTTP_ACCEPT_LANGUAGE': 'en-US', 'HTTP_CONNECTION': 'Keep-Alive', 'HTTP_COOKIE': 'session_id_welcome=127.0.0.1-ab6ea133-1347-4ade-...d1=127.0.0.1-7eecb705-f1a9-426f-ae22-88e750fb5cfa', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_REFERER': 'http://127.0.0.1:8000/darkcloud1/default/subscriber/sensors', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleW... Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299', 'PATH_INFO': '/darkcloud1/default/subscriber/endpoints', 'QUERY_STRING': '', ...}"
+p98
+sS'sock_file'
+p99
+S'<socket._fileobject object>'
+p100
+sS'environ'
+p101
+S'undefined'
+p102
+sS'self.build_environ'
+p103
+S'<bound method WSGIWorker.build_environ of <WSGIWorker(Thread-9, started daemon 22960)>>'
+p104
+sS'conn'
+p105
+S'<gluon.rocket.Connection object>'
+p106
+ssg75
+I1812
+sg76
+(dp107
+I1807
+S'        else:'
+p108
+sI1808
+S'            sock_file = conn.makefile(BUF_SIZE)'
+p109
+sI1809
+S''
+sI1810
+S'        try:'
+p110
+sI1811
+S'            # Read the headers and build our WSGI environment'
+p111
+sI1812
+S'            self.environ = environ = self.build_environ(sock_file, conn)'
+p112
+sI1813
+S''
+sI1814
+S'            # Handle 100 Continue'
+p113
+sI1815
+S"            if environ.get('HTTP_EXPECT', '') == '100-continue':"
+p114
+sI1816
+S"                res = environ['SERVER_PROTOCOL'] + ' 100 Continue\\r\\n\\r\\n'"
+p115
+ssg88
+S'(self=<WSGIWorker(Thread-9, started daemon 22960)>, conn=<gluon.rocket.Connection object>)'
+p116
+sg90
+S'run_app'
+p117
+sa(dp118
+g65
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py'
+p119
+sg67
+(dp120
+S'sock_file'
+p121
+S'<socket._fileobject object>'
+p122
+sS'self.read_request_line'
+p123
+S'<bound method WSGIWorker.read_request_line of <WSGIWorker(Thread-9, started daemon 22960)>>'
+p124
+sS'self'
+p125
+S'<WSGIWorker(Thread-9, started daemon 22960)>'
+p126
+sS'request'
+p127
+g102
+ssg75
+I1632
+sg76
+(dp128
+I1632
+S'        request = self.read_request_line(sock_file)'
+p129
+sI1633
+S''
+sI1634
+S'        # Copy the Base Environment'
+p130
+sI1635
+S'        environ = self.base_environ.copy()'
+p131
+sI1636
+S''
+sI1627
+S'                                      "wsgiorg.futures": executor.futures})'
+p132
+sI1628
+S''
+sI1629
+S'    def build_environ(self, sock_file, conn):'
+p133
+sI1630
+S'        """ Build the execution environment. """'
+p134
+sI1631
+S'        # Grab the request line'
+p135
+ssg88
+S'(self=<WSGIWorker(Thread-9, started daemon 22960)>, sock_file=<socket._fileobject object>, conn=<gluon.rocket.Connection object>)'
+p136
+sg90
+S'build_environ'
+p137
+sa(dp138
+g65
+S'C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py'
+p139
+sg67
+(dp140
+S'global SocketTimeout'
+p141
+S"<class 'gluon.rocket.SocketTimeout'>"
+p142
+ssg75
+I1383
+sg76
+(dp143
+I1378
+S''
+sI1379
+S'                d = sock_file.readline()'
+p144
+sI1380
+S'                if PY3K:'
+p145
+sI1381
+S"                    d = d.decode('ISO-8859-1')"
+p146
+sI1382
+S'        except socket.timeout:'
+p147
+sI1383
+S"            raise SocketTimeout('Socket timed out before request.')"
+p148
+sI1384
+S'        except TypeError:'
+p149
+sI1385
+S'            raise SocketClosed('
+p150
+sI1386
+S"                'SSL bug caused closure of socket.  See '"
+p151
+sI1387
+S'                \'"https://groups.google.com/d/topic/web2py/P_Gw0JxWzCs".\')'
+p152
+ssg88
+S'(self=<WSGIWorker(Thread-9, started daemon 22960)>, sock_file=<socket._fileobject object>)'
+p153
+sg90
+S'read_request_line'
+p154
+sasS'pyver'
+p155
+S'Python 2.7.13: C:\\python27-x64\\python.exe (prefix: C:\\python27-x64)'
+p156
+sS'etype'
+p157
+S"<class 'gluon.rocket.SocketTimeout'>"
+p158
+sS'date'
+p159
+S'Mon Apr 23 15:50:55 2018'
+p160
+sS'locals'
+p161
+(dp162
+S'sock_file'
+p163
+S'<socket._fileobject object>'
+p164
+sS'self'
+p165
+S'<WSGIWorker(Thread-9, started daemon 22960)>'
+p166
+sssS'traceback'
+p167
+S'Traceback (most recent call last):\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py", line 1319, in run\n    self.run_app(conn)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py", line 1812, in run_app\n    self.environ = environ = self.build_environ(sock_file, conn)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py", line 1632, in build_environ\n    request = self.read_request_line(sock_file)\n  File "C:\\Users\\hd\\PycharmProjects\\untitled\\web2py\\gluon\\rocket.py", line 1383, in read_request_line\n    raise SocketTimeout(\'Socket timed out before request.\')\nSocketTimeout: Socket timed out before request.\n'
+p168
+s.

@@ -1,0 +1,638 @@
+timestamp: 2018-04-21T04:06:58.386000
+CREATE TABLE "auth_user"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "first_name" CHAR(128),
+    "last_name" CHAR(128),
+    "email" CHAR(512),
+    "password" CHAR(512),
+    "registration_key" CHAR(512),
+    "reset_password_key" CHAR(512),
+    "registration_id" CHAR(512)
+);
+success!
+timestamp: 2018-04-21T04:06:58.592000
+CREATE TABLE "auth_group"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "role" CHAR(512),
+    "description" TEXT
+);
+success!
+timestamp: 2018-04-21T04:06:58.727000
+CREATE TABLE "auth_membership"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "group_id" INTEGER REFERENCES "auth_group" ("id") ON DELETE CASCADE  
+);
+success!
+timestamp: 2018-04-21T04:06:58.883000
+CREATE TABLE "auth_permission"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "group_id" INTEGER REFERENCES "auth_group" ("id") ON DELETE CASCADE  ,
+    "name" CHAR(512),
+    "table_name" CHAR(512),
+    "record_id" INTEGER
+);
+success!
+timestamp: 2018-04-21T04:06:58.992000
+CREATE TABLE "auth_event"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "time_stamp" TIMESTAMP,
+    "client_ip" CHAR(512),
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "origin" CHAR(512),
+    "description" TEXT
+);
+success!
+timestamp: 2018-04-21T04:06:59.112000
+CREATE TABLE "auth_cas"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "user_id" INTEGER REFERENCES "auth_user" ("id") ON DELETE CASCADE  ,
+    "created_on" TIMESTAMP,
+    "service" CHAR(512),
+    "ticket" CHAR(512),
+    "renew" CHAR(1)
+);
+success!
+timestamp: 2018-04-21T04:06:59.263000
+CREATE TABLE "analysis"(
+    "analysis_id" INTEGER NOT NULL,
+    "executable_id" CHAR(512), CONSTRAINT  "FK_analysis_executable_id__constraint" FOREIGN KEY ("executable_id") REFERENCES "executable_image" ("ex_filehash") ON DELETE CASCADE,
+    PRIMARY KEY("analysis_id", "executable_id")) ;
+success!
+timestamp: 2018-04-21T04:14:27.647000
+CREATE TABLE "users"(
+    "firstname" CHAR(512) NOT NULL,
+    "lastname" CHAR(512) NOT NULL,
+    "username" CHAR(512),
+    "password" CHAR(512),
+    "email" CHAR(512) NOT NULL UNIQUE,
+    "usertype" INTEGER NOT NULL,
+    "License_count_endpoint" INTEGER,
+    "License_count_sensors" INTEGER,
+    PRIMARY KEY("email")) ;
+success!
+timestamp: 2018-04-21T04:16:28.066000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "os_version" CHAR(512) NOT NULL,
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:17:32.163000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "versionos" CHAR(512) NOT NULL,
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:18:21.182000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "version_os" CHAR(512),
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:18:49.247000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:19:42.734000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "version_os" CHAR(512),
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:24:45.714000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_endpoint_agents_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "version_os" CHAR(512),
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+timestamp: 2018-04-21T04:25:15.184000
+CREATE TABLE "endpoint_agents"(
+    "endpoint_id" CHAR(512) NOT NULL,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512) NOT NULL,
+    "version_os" CHAR(512),
+    "enrollement_stamp" CHAR(512),
+    "enrolled_flag" CHAR(1),
+    PRIMARY KEY("endpoint_id")) ;
+success!
+timestamp: 2018-04-21T04:25:15.322000
+CREATE TABLE "sensors"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_sensors_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "enrollement_stamp" TIMESTAMP,
+    "enrolled_flag" CHAR(1)
+);
+timestamp: 2018-04-21T04:25:45.004000
+CREATE TABLE "sensors"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_sensors_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "enrollement_stamp" TIMESTAMP,
+    "enrolled_flag" CHAR(1)
+);
+timestamp: 2018-04-21T04:26:16.502000
+ALTER TABLE "endpoint_agents" ADD "enrollement_timestamp" CHAR(512);
+success!
+timestamp: 2018-04-21T04:26:16.801000
+CREATE TABLE "sensors"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "ip" CHAR(512) NOT NULL,
+    "owner_ID" CHAR(512), CONSTRAINT  "FK_sensors_owner_ID__constraint" FOREIGN KEY ("owner_ID") REFERENCES "users" ("email") ON DELETE CASCADE,
+    "enrollement_stamp" TIMESTAMP,
+    "enrolled_flag" CHAR(1)
+);
+timestamp: 2018-04-21T19:37:16.031000
+CREATE TABLE `auth_user`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `first_name` VARCHAR(128),
+    `last_name` VARCHAR(128),
+    `email` VARCHAR(512),
+    `password` VARCHAR(512),
+    `registration_key` VARCHAR(512),
+    `reset_password_key` VARCHAR(512),
+    `registration_id` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:16.420000
+CREATE TABLE `auth_group`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `role` VARCHAR(512),
+    `description` LONGTEXT,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:17.555000
+CREATE TABLE `auth_membership`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `user_id` INT  , INDEX `user_id__idx` (`user_id`), FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`) ON DELETE CASCADE,
+    `group_id` INT  , INDEX `group_id__idx` (`group_id`), FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`) ON DELETE CASCADE,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:17.809000
+CREATE TABLE `auth_permission`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `group_id` INT  , INDEX `group_id__idx` (`group_id`), FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`) ON DELETE CASCADE,
+    `name` VARCHAR(512),
+    `table_name` VARCHAR(512),
+    `record_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:18.033000
+CREATE TABLE `auth_event`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `time_stamp` DATETIME,
+    `client_ip` VARCHAR(512),
+    `user_id` INT  , INDEX `user_id__idx` (`user_id`), FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`) ON DELETE CASCADE,
+    `origin` VARCHAR(512),
+    `description` LONGTEXT,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:18.366000
+CREATE TABLE `auth_cas`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `user_id` INT  , INDEX `user_id__idx` (`user_id`), FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`) ON DELETE CASCADE,
+    `created_on` DATETIME,
+    `service` VARCHAR(512),
+    `ticket` VARCHAR(512),
+    `renew` CHAR(1),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T19:37:18.541000
+CREATE TABLE `users`(
+    `firstname` VARCHAR(512) NOT NULL,
+    `lastname` VARCHAR(512) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(512) NOT NULL UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY(`email`))  ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T19:45:07.281000
+CREATE TABLE `users`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `firstname` VARCHAR(512) NOT NULL,
+    `lastname` VARCHAR(512) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(512) UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T19:47:43.325000
+CREATE TABLE `users`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `firstname` VARCHAR(512) NOT NULL,
+    `lastname` VARCHAR(512) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(512) UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:30:01.001000
+CREATE TABLE `users`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `firstname` VARCHAR(512) NOT NULL,
+    `lastname` VARCHAR(512) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(512) UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:37:00.500000
+CREATE TABLE `users`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `firstname` VARCHAR(512) NOT NULL,
+    `lastname` VARCHAR(512) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(512) UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:43:29.924000
+CREATE TABLE `users`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `firstname` VARCHAR(255) NOT NULL,
+    `lastname` VARCHAR(255) NOT NULL,
+    `username` VARCHAR(512),
+    `password` VARCHAR(512),
+    `email` VARCHAR(255) UNIQUE,
+    `usertype` INTEGER NOT NULL,
+    `License_count_endpoint` INTEGER,
+    `License_count_sensors` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:43:30.548000
+CREATE TABLE `endpoint_agents`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `endpoint_id` VARCHAR(512),
+    `ip` VARCHAR(512) NOT NULL,
+    `owner_ID` VARCHAR(512) NOT NULL,
+    `version_os` VARCHAR(512),
+    `enrollement_timestamp` VARCHAR(512),
+    `enrolled_flag` CHAR(1),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:46:36.217000
+ALTER TABLE `users` ADD `email__tmp` VARCHAR(255) NOT NULL UNIQUE;
+success!
+UPDATE `users` SET `email__tmp`=`email`;
+success!
+ALTER TABLE `users` DROP COLUMN `email`;
+success!
+ALTER TABLE `users` ADD `email` VARCHAR(255) NOT NULL UNIQUE;
+success!
+UPDATE `users` SET `email`=`email__tmp`;
+success!
+ALTER TABLE `users` DROP COLUMN `email__tmp`;
+success!
+timestamp: 2018-04-21T20:46:38.024000
+ALTER TABLE `users` DROP COLUMN `id`;
+success!
+timestamp: 2018-04-21T20:46:38.658000
+CREATE TABLE `sensors`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `ip` VARCHAR(512) NOT NULL,
+    `owner_ID` VARCHAR(255), CONSTRAINT `FK_sensors_owner_ID__constraint` FOREIGN KEY (`owner_ID`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `enrollement_stamp` DATETIME,
+    `enrolled_flag` CHAR(1),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:46:38.857000
+CREATE TABLE `honeypots`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `ip` VARCHAR(512) NOT NULL,
+    `description` VARCHAR(512) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:46:39.055000
+CREATE TABLE `submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:46:39.246000
+CREATE TABLE `executable_image`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `ex_filehash` VARCHAR(512),
+    `filesize` INTEGER,
+    `filetype` VARCHAR(512),
+    `file_image` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:48:38.427000
+ALTER TABLE `endpoint_agents` ADD `endpoint_id__tmp` VARCHAR(512) NOT NULL;
+success!
+UPDATE `endpoint_agents` SET `endpoint_id__tmp`=`endpoint_id`;
+success!
+ALTER TABLE `endpoint_agents` DROP COLUMN `endpoint_id`;
+success!
+ALTER TABLE `endpoint_agents` ADD `endpoint_id` VARCHAR(512) NOT NULL;
+success!
+UPDATE `endpoint_agents` SET `endpoint_id`=`endpoint_id__tmp`;
+success!
+ALTER TABLE `endpoint_agents` DROP COLUMN `endpoint_id__tmp`;
+success!
+timestamp: 2018-04-21T20:48:40.184000
+ALTER TABLE `endpoint_agents` DROP COLUMN `id`;
+success!
+timestamp: 2018-04-21T20:48:41.279000
+ALTER TABLE `sensors` ADD `id__tmp` VARCHAR(255) NOT NULL;
+success!
+UPDATE `sensors` SET `id__tmp`=`id`;
+success!
+ALTER TABLE `sensors` DROP COLUMN `id`;
+success!
+ALTER TABLE `sensors` ADD `id` VARCHAR(255) NOT NULL;
+success!
+UPDATE `sensors` SET `id`=`id__tmp`;
+success!
+ALTER TABLE `sensors` DROP COLUMN `id__tmp`;
+success!
+timestamp: 2018-04-21T20:48:43.229000
+ALTER TABLE `honeypots` ADD `id__tmp` VARCHAR(255) NOT NULL;
+success!
+UPDATE `honeypots` SET `id__tmp`=`id`;
+success!
+ALTER TABLE `honeypots` DROP COLUMN `id`;
+success!
+ALTER TABLE `honeypots` ADD `id` VARCHAR(255) NOT NULL;
+success!
+UPDATE `honeypots` SET `id`=`id__tmp`;
+success!
+ALTER TABLE `honeypots` DROP COLUMN `id__tmp`;
+success!
+success!
+timestamp: 2018-04-21T20:48:45.472000
+CREATE TABLE `process_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_process_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(512), CONSTRAINT `FK_process_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `process_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `child_id` VARCHAR(512),
+    `child_hash` VARCHAR(512),
+    `child_image_path` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:51:13.849000
+ALTER TABLE `endpoint_agents` ADD `endpoint_id__tmp` VARCHAR(255) NOT NULL;
+success!
+UPDATE `endpoint_agents` SET `endpoint_id__tmp`=`endpoint_id`;
+success!
+ALTER TABLE `endpoint_agents` DROP COLUMN `endpoint_id`;
+success!
+ALTER TABLE `endpoint_agents` ADD `endpoint_id` VARCHAR(255) NOT NULL;
+success!
+UPDATE `endpoint_agents` SET `endpoint_id`=`endpoint_id__tmp`;
+success!
+ALTER TABLE `endpoint_agents` DROP COLUMN `endpoint_id__tmp`;
+success!
+success!
+timestamp: 2018-04-21T20:51:15.503000
+CREATE TABLE `process_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_process_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(255), CONSTRAINT `FK_process_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `process_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `child_id` VARCHAR(512),
+    `child_hash` VARCHAR(512),
+    `child_image_path` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:51:25.731000
+CREATE TABLE `process_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_process_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(255), CONSTRAINT `FK_process_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `process_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `child_id` VARCHAR(512),
+    `child_hash` VARCHAR(512),
+    `child_image_path` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-21T20:52:41.545000
+CREATE TABLE `process_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_process_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(255), CONSTRAINT `FK_process_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `process_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `child_id` VARCHAR(512),
+    `child_hash` VARCHAR(512),
+    `child_image_path` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:52:41.804000
+CREATE TABLE `url_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_url_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(255), CONSTRAINT `FK_url_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `url_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `url_string` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:52:42.112000
+CREATE TABLE `ips_traps`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `trap_id` VARCHAR(255), CONSTRAINT `FK_ips_traps_trap_id__constraint` FOREIGN KEY (`trap_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `endpoint_id` VARCHAR(255), CONSTRAINT `FK_ips_traps_endpoint_id__constraint` FOREIGN KEY (`endpoint_id`) REFERENCES `endpoint_agents` (`endpoint_id`) ON DELETE CASCADE,
+    `ip_timestamp` TIME NOT NULL,
+    `action_taken` VARCHAR(512) NOT NULL,
+    `reason` VARCHAR(512) NOT NULL,
+    `creator_pid` VARCHAR(512),
+    `creator_path` VARCHAR(512),
+    `creator_hash` VARCHAR(512),
+    `ip_string` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:52:42.345000
+CREATE TABLE `blacklisted_ip`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `ip_string` VARCHAR(512) NOT NULL,
+    `creator_id` VARCHAR(255), CONSTRAINT `FK_blacklisted_ip_creator_id__constraint` FOREIGN KEY (`creator_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `ip_type` VARCHAR(512) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:52:42.586000
+CREATE TABLE `blacklisted_url`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `url_string` VARCHAR(512) NOT NULL,
+    `creator_id` VARCHAR(255), CONSTRAINT `FK_blacklisted_url_creator_id__constraint` FOREIGN KEY (`creator_id`) REFERENCES `users` (`email`) ON DELETE CASCADE,
+    `url_type` VARCHAR(512) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-21T20:52:42.783000
+CREATE TABLE `blacklisted_exe`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `exec_hash` VARCHAR(512) NOT NULL,
+    `exe_type` VARCHAR(512) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2018-04-22T03:49:19.247000
+ALTER TABLE `endpoint_agents` ADD `os_version` VARCHAR(512);
+timestamp: 2018-04-22T03:49:52.712000
+ALTER TABLE `endpoint_agents` ADD `os_version` VARCHAR(512);
+success!
+timestamp: 2018-04-22T03:49:53.383000
+ALTER TABLE `endpoint_agents` DROP COLUMN `version_os`;
+timestamp: 2018-04-23T16:23:27.703000
+ALTER TABLE `sensors` ADD `enrollement_timestamp` DATETIME;
+success!
+success!
+success!
+timestamp: 2018-04-27T20:12:51.171000
+CREATE TABLE `agents_submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_agents_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `endpoint_agents` (`id`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-27T20:13:41.492000
+CREATE TABLE `agents_submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_agents_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `endpoint_agents` (`id`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-27T20:14:52.850000
+CREATE TABLE `agents_submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_agents_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `endpoint_agents` (`id`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-27T20:15:43.694000
+CREATE TABLE `agents_submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_agents_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `endpoint_agents` (`id`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2018-04-27T20:15:45.505000
+CREATE TABLE `agents_submissions`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `submitter_id` VARCHAR(255), CONSTRAINT `FK_agents_submissions_submitter_id__constraint` FOREIGN KEY (`submitter_id`) REFERENCES `endpoint_agents` (`id`) ON DELETE CASCADE,
+    `submitter_type` VARCHAR(512) NOT NULL,
+    `submitted_filehash` VARCHAR(512) NOT NULL,
+    `submitted_timestamp` TIME NOT NULL,
+    `submitted_domain` VARCHAR(512) NOT NULL,
+    `sent_to` VARCHAR(512),
+    `sent_from` VARCHAR(512),
+    `protocol` VARCHAR(512),
+    `src_address` VARCHAR(512),
+    `dst_address` VARCHAR(512),
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
