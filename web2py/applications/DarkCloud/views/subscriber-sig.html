@@ -1,0 +1,50 @@
+{{include}}
+ {{elif session['action']=='sig-exe' or session['action']=='sig-exe-blacklist' or session['action']=='sig-exe-whitelist' :}}
+
+<div class="tab">
+    <a href="{{=URL(f='subscriber',args=['sig-exe-blacklist'])}}">Blacklist</a>
+    <a href="{{=URL(f='subscriber',args=['sig-exe-whitelist'])}}">Whitelist</a>
+                  <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+            </div>
+          </form>
+        </div>
+             <div class="box-body" id="submission" style="display: block;">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Hash</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{for row in siglist:}}
+                <tr>
+                <td>{{=row.url_string}}</td>
+                </tr>
+                    {{pass}}
+          </tbody></table>  </div>
+
+        {{elif session['action']=='sig-url' or session['action']=='sig-url-blacklist' or session['action']=='sig-url-malicious' :}}
+
+
+<div class="tab">
+    <a href="{{=URL(f='subscriber',args=['sig-url-blacklist'])}}">Blacklist</a>
+    <a href="{{=URL(f='subscriber',args=['sig-url-malicious'])}}">Malicious</a>
+        </div>
+             <div class="box-body" id="submission" style="display: block;">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>URL</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{for row in siglist:}}
+                <tr>
+                <td>{{=row.url_string}}</td>
+                </tr>
+                    {{pass}}
+          </tbody></table>  </div>
+        {{pass}}
+

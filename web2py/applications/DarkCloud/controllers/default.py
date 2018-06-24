@@ -2,6 +2,9 @@
 # -------------------------------------------------------------------------
 #login function
 from datetime import datetime
+def index():
+    redirect(URL(f='login'))
+
 def login():
     message=''
     message1=''
@@ -120,6 +123,7 @@ def subscriber():
     session['action']='endpoints'
     devicestemp = ''
     addform = ''
+    siglist=''
     type='Endpoints'
     session['vars']=None
     if request.args:
@@ -195,7 +199,58 @@ def subscriber():
     elif session['action'] == 'events':
             type = 'Submissions'
             devicestemp = db(db.sensors_submissions).select(db.sensors_submissions.ALL)
-    return dict(usertype=type, user=session.user.username, devicestemp=devicestemp, form=addform)
+
+    elif session['action']=='sig-url-blacklist':
+        type='URLs'
+        addform = SQLFORM.factory(db.blacklisted_url.url_string, db.blacklisted_url.creator_comment)
+        if addform.process().accepted:
+            id = db.blacklisted_url.insert(url_string=request.vars.url_string, creator_comment=request.vars.creator_comment,
+                                           creator_id=session['user'].email,type_='blacklist')
+            redirect(URL(f='subscriber', args=['sig-url-blacklist']))
+        siglist =db(db.blacklisted_url.type_=='blacklist').select(db.blacklisted_url.ALL)
+
+
+    elif session['action']=='sig-url-malicious':
+        type='URLs'
+        addform = SQLFORM.factory(db.blacklisted_url.url_string, db.blacklisted_url.creator_comment)
+        if addform.process().accepted:
+            id = db.blacklisted_url.insert(url_string=request.vars.url_string,
+                                           creator_comment=request.vars.creator_comment,
+                                           creator_id=session['user'].email, type_='malicious')
+            redirect(URL(f='subscriber', args=['sig-url-malicious']))
+
+        siglist =db(db.blacklisted_url.type_=='malicious').select(db.blacklisted_url.ALL)
+
+    elif session['action']=='sig-ip-blacklist':
+        type='IPs'
+        addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
+        if addform.process().accepted:
+            id = db.blacklisted_ip.insert(ip_string=request.vars.ip_string,
+                                           creator_comment=request.vars.creator_comment,
+                                           creator_id=session['user'].email, type_='blacklist')
+            redirect(URL(f='subscriber', args=['sig-ip-malicious']))
+
+        siglist =db(db.blacklisted_ip.type_=='blacklist').select(db.blacklisted_ip.ALL)
+    elif session['action']=='sig-ip-malicious':
+        type='IPs'
+        addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
+        if addform.process().accepted:
+            id = db.blacklisted_ip.insert(ip_string=request.vars.ip_string,
+                                           creator_comment=request.vars.creator_comment,
+                                           creator_id=session['user'].email, type_='malicious')
+            redirect(URL(f='subscriber', args=['sig-ip-malicious']))
+
+        siglist =db(db.blacklisted_ip.type_=='malicious' and db.blacklisted_ip.creator_id == session['user'].email).select(db.blacklisted_ip.ALL)
+
+    elif session['action']=='sig-exe-blacklist':
+        type='Executables'
+        siglist =db(db.blacklisted_exe.type_=='blacklist').select(db.blacklisted_exe.ALL)
+    elif session['action']=='sig-exe-whitelist':
+        type='Executables'
+        siglist =db(db.blacklisted_exe.type_=='whitelist').select(db.blacklisted_exe.ALL)
+
+
+    return dict(usertype=type, user=session.user.username, devicestemp=devicestemp, form=addform, siglist=siglist)
 
 
 def analyst():
