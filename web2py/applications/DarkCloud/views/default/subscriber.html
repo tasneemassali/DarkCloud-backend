@@ -1,6 +1,7 @@
 {{extend 'layout1.html'}}
 <div class="wrapper" >
 
+    <!--start of header-->
   <header class="main-header">
     <!-- Logo -->
     <a href="#" class="logo">
@@ -35,20 +36,10 @@
                       <i class="fa fa-users text-aqua"></i> 5 new members joined today
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-
                 </ul>
               </li>
-              <li class="footer"><a href="#">View all</a></li>
             </ul>
           </li>
-
-
 
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
@@ -77,14 +68,15 @@
               </li>
             </ul>
           </li>
-
-
         </ul>
       </div>
     </nav>
   </header>
+    <!---end of header-->
+
+
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="background-color: black">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -96,11 +88,10 @@
           <p>{{=user}}</p>
            </div>
       </div>
-      <!-- search form -->
 
-      <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <l class="sidebar-menu" data-widget="tree">
+          <!--endpoints options-->
         <li class="treeview">
           <a href="">
             <i class="fa  fa-users"></i>
@@ -116,69 +107,62 @@
             <li><a href="{{=URL(f='subscriber',args=['add_endpoints'])}}"><i class="fa-plus"></i> Add new endpoint</a></li>
           </ul>
         </li>
-          <li class="treeview">
-             <a href="{{=URL('subscriber',args=['sensors'])}}">
-            <i class="fa  fa-cogs"></i>
-            <span>Sensors</span>
-           <span class="pull-right-container">
-			 <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{=URL(f='subscriber',args=['sensors'])}}"><i class="fa fa-circle-o"></i> View Current Sensors</a></li>
-            <li><a href="{{=URL(f='subscriber',args=['sensors_submissions'])}}"><i class="fa fa-circle-o"></i> View Sensors Submissions</a></li>
-            <li><a href="{{=URL(f='subscriber',args=['statistics'])}}"><i class="fa fa-circle-o"></i> View Sensors Statistics</a></li>
-            <li><a href="{{=URL(f='subscriber',args=['add_sensors'])}}" ><i class="fa fa-circle-o"></i> Add new Sensor</a></li>
-          </ul>
-      </li>
-          <li class="treeview">
-               <a href="{{=URL('subscriber',args=['query'])}}">
-            <i class="fa  fa-cog"></i>
-            <span>Query</span>
-                    <span class="pull-right-container">
-			 <i class="fa fa-angle-left pull-right"></i>
-            </span>
-               </a>
-           <ul class="treeview-menu">
-                  <!--  <li><a href="{{=URL(f='subscriber',vars=dict(showtable=1),args=['query'])}}"><i class="fa fa-circle-o"></i> Search with hashes</a></li>
-           <!--search form-->
-                     <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q"  class="form-control" placeholder="Search with hashes">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-           </ul></li>
+          <!--end of endpoints-->
 
-            <li class="treeview">
+          <!--sensors options-->
+        <li class="treeview">
+            <a href="{{=URL('subscriber',args=['sensors'])}}">
+                <i class="fa  fa-cogs"></i>
+                <span>Sensors</span>
+                <span class="pull-right-container">
+			        <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{=URL(f='subscriber',args=['sensors'])}}"><i class="fa fa-circle-o"></i> View Current Sensors</a></li>
+                <li><a href="{{=URL(f='subscriber',args=['sensors_submissions'])}}"><i class="fa fa-circle-o"></i> View Sensors Submissions</a></li>
+                <li><a href="{{=URL(f='subscriber',args=['statistics'])}}"><i class="fa fa-circle-o"></i> View Sensors Statistics</a></li>
+                <li><a href="{{=URL(f='subscriber',args=['add_sensors'])}}" ><i class="fa fa-circle-o"></i> Add new Sensor</a></li>
+            </ul>
+        </li>
+          <!--end of sensors-->
+
+          <!--list of signitures-->
+        <li class="treeview">
+            <a href="{{=URL('subscriber',args=['sensors'])}}">
+                <i class="fa  fa-cogs"></i>
+                <span>Signatures</span>
+                <span class="pull-right-container">
+			        <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{=URL(f='subscriber',args=['sig-exe-blacklist'])}}"><i class="fa fa-circle-o"></i> Executables </a></li>
+                <li><a href="{{=URL(f='subscriber',args=['sig-ip-blacklist'])}}"><i class="fa fa-circle-o"></i> IPs</a></li>
+                <li><a href="{{=URL(f='subscriber',args=['sig-url-blacklist'])}}"><i class="fa fa-circle-o"></i>URLs</a></li>
+            </ul>
+        </li>
+          <!--end of signatures-->
+
+          <!--events-->
+        <li class="treeview">
            <a href="{{=URL('subscriber',args=['events'])}}">
             <i class="fa  fa-calendar-check-o"></i>
             <span>Events</span>
-           </a></li>
+           </a>
+        </li>
+          <!--end of events-->
 
-              <li class="treeview">
-             <a href="{{=URL('subscriber',args=['sensors'])}}">
-            <i class="fa  fa-cogs"></i>
-            <span>Signatures</span>
-           <span class="pull-right-container">
-			 <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{=URL(f='subscriber',args=['sig-exe-blacklist'])}}"><i class="fa fa-circle-o"></i> Executables </a></li>
-            <li><a href="{{=URL(f='subscriber',args=['sig-ip-blacklist'])}}"><i class="fa fa-circle-o"></i> IPs</a></li>
-            <li><a href="{{=URL(f='subscriber',args=['sig-url-blacklist'])}}"><i class="fa fa-circle-o"></i>URLs</a></li>
-          </ul>
-      </li>
-
-      </l></section>
-    <!-- /.sidebar -->
+      </l>
+        <!--end of sidebar menu-->
+    </section>
+      <!--end of sidebar section-->
   </aside>
-  <!-- Content Wrapper. Contains page content -->
+    <!--end of left side column-->
+
+    <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -186,253 +170,412 @@
         <small>View and Edit</small>
       </h1>
         <!--user view for user management-->
-         <ol class="breadcrumb">
+      <ol class="breadcrumb">
         <li><a href="#" ><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">{{=usertype}}</li>
       </ol>
     </section>
- <div class="box-header">
-            <!--  <span class="pull-right-container" style="float:right;">
-                 <a href="#" id="add3"> <i class="fa fa-plus">Add</i></a>
-              </span>-->
-                </div>
+      <!--end of content header-->
+
         {{if session['action']=='add_sensors' or session['action']=='add_endpoints':}}
              <div id="add" class="tab-pane" style="display:none;">
                      <span class="close">&times;</span>
                   {{=form}}
                 </div>
-    {{pass}}
-    <!-- Main content -->
+        {{pass}}
+
+      <!-- Main content -->
     <section class="content">
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
+              <!--start of sensors and endpoints views-->
+            {{if session['action']=='sensors' or session['action']=='endpoints':}}
+              <div class="box-body" id="sensors" style="display: block;">
+                 <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>IP</th>
+                            <th>Owner ID</th>
+                        {{if session['action']=='endpoints':}}
+                            <th>OS version</th>
+                        {{pass}}
+                            <th>Enrollment Timestamp</th>
+                            <th>Enrolled Flag</th>
+                        </tr>
+                    </thead>
+                 <tbody>
+                    {{for row in devicestemp:}}
+                        <tr onclick="window.location='{{=URL(f="subscriber",args=["statistics"],vars={'id':row.id,'type':session['action']})}}';">
+                            <td>{{=row.ip}}</td>
+                            <td>
+                                {{=row.owner_ID}}
+                            </td>
+                      {{if session['action']=='endpoints':}}
+                            <td>{{=row.os_version}}</td>
+                      {{pass}}
+                            <td>{{=row.enrollement_timestamp}}</td>
+                            <td> {{=row.enrolled_flag}}
+                            <span style="float:right;">
+                      {{if session['action']=='sensors':}}
+                                <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=['sensors'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
+                      {{else:}}
+                                <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=['endpoints'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
+                      {{pass}}
+                            </span></td>
+                     </tr>
+                    {{pass}}
 
-                <!--Modal-------------------------->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-                    <div class="modal-dialog" role="document">
+                 </tbody></table>
+              </div>
+                <!--end of sensoors and endpoint views-->
+
+              <!--start of submissions-->
+            {{elif session['action']=='sensors_submissions' or session['action']=='agents_submissions':}}
+              <div class="box-body" id="submission" style="display: block;">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Submitter</th>
+                        <th>Type</th>
+                        <th>File hash</th>
+                        <th>Timestamp</th>
+                        <th>Domain</th>
+                        <th>source</th>
+                        <th>destination</th>
+                        <th>protocol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{for row in devicestemp:}}
+                    <tr>
+                        <td>{{=row.submitter_id}}</td>
+                        <td>
+                            {{=row.submitter_type}}
+                        </td>
+                        <td>{{=row.submitted_filehash}}</td>
+                        <td>{{=row.submitted_timestamp}}</td>
+                        <td> {{=row.submitted_domain}}</td>
+
+                    {{if row.submitted_domain=='mail':}}
+                        <td> {{=row.sent_to}}</td>
+                        <td> {{=row.sent_from}}</td>
+                    {{elif row.submitted_domain=='web':}}
+                        <td> {{=row.src_address}}</td>
+                        <td> {{=row.dst_address}}</td>
+                    {{pass}}
+                        <td> {{=row.protocol}}</td>
+                    </tr>
+                {{pass}}
+                </tbody>
+              </table>
+              </div>
+                <!--./end of submissions-->
+
+             <!--start of statistics-->
+            {{elif session['action']=='statistics':}}
+                <!-- DONUT CHART -->
+              <div class="box box-danger">
+                  <div class="box-header with-border">
+                      <h3 class="box-title">Donut Chart</h3>
+                      <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i  ></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                      </div>
+                  </div>
+                  <div class="box-body">
+                    <canvas id="pieChart" style="height:250px"></canvas>
+                  </div>
+              </div>
+              <!--end of statistics-->
+
+                <!--start of signatures content-->
+              <!--exe-->
+            {{elif session['action']=='sig-exe' or session['action']=='sig-exe-blacklist' or session['action']=='sig-exe-whitelist' :}}
+              <div class="tab">
+                <a href="{{=URL(f='subscriber',args=['sig-exe-blacklist'])}}">Blacklist</a>
+                <a href="{{=URL(f='subscriber',args=['sig-exe-whitelist'])}}">Whitelist</a>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                    </div>
+                </form>
+              </div>
+              <div class="box-body" id="submission" style="display: block;">
+                <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Hash</th>
+                        <th>Comment</th>
+                        <th>time created</th>
+                        <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exeModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{for row in siglist:}}
+                    <tr>
+                        <td>{{=row.exec_hash}}</td>
+                        <td>{{=row.creator_comment}}</td>
+                        <td>{{=row.time_created}}</td>
+                        <td> <a href="{{=URL(f='subscriber',vars={'id':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
+                        </td>
+                    </tr>
+
+                {{pass}}
+                </tbody></table>
+              </div>
+
+              <!--url-->
+            {{elif session['action']=='sig-url' or session['action']=='sig-url-blacklist' or session['action']=='sig-url-malicious' :}}
+              <div class="tab">
+                  <a href="{{=URL(f='subscriber',args=['sig-url-blacklist'])}}">Blacklist</a>
+                  <a href="{{=URL(f='subscriber',args=['sig-url-malicious'])}}">Malicious</a>
+                  <form class="navbar-form navbar-right" role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                    </div>
+                  </form>
+              </div>
+              <div class="box-body" id="submission" style="display: block;">
+                <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>URL</th>
+                            <th>Comment</th>
+                            <th>Time created</th>
+                            <th><a type="button" class="btn btn-primary" data-toggle="modal" data-target="#urlModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></a></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                {{for row in siglist:}}
+                        <tr>
+                            <td>{{=row.url_string}}</td>
+                            <td>{{=row.creator_comment}}</td>
+                            <td>{{=row.time_created}}</td>
+                            <td><a href="{{=URL(f='subscriber',vars={'id':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a></td>
+                        </tr>
+                {{pass}}
+                    </tbody></table>
+              </div>
+
+              <!--ip-->
+            {{elif session['action']=='sig-ip' or session['action']=='sig-ip-blacklist' or session['action']=='sig-ip-malicious' :}}
+              <div class="tab">
+                  <a href="{{=URL(f='subscriber',args=['sig-ip-blacklist'])}}">Blacklist</a>
+                  <a href="{{=URL(f='subscriber',args=['sig-ip-malicious'])}}">Malicious</a>
+                  <form class="navbar-form navbar-right" role="search">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                      </div>
+                  </form>
+              </div>
+              <div class="box-body" id="submission" style="display: block;">
+                  <table id="example2" class="table table-bordered table-hover">
+                      <thead>
+                      <tr>
+                          <th>IP</th>
+                          <th>Comment</th>
+                          <th>Time created</th>
+                          <th><a type="button" class="btn btn-primary" data-toggle="modal" data-target="#ipModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></a></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                {{for row in siglist:}}
+                      <tr>
+                          <td>{{=row.ip_string}}</td>
+                          <td>{{=row.creator_comment}}</td>
+                          <td>{{=row.time_created}}</td>
+                          <td>  <a href="{{=URL(f='subscriber',vars={'id':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a></td>
+                      </tr>
+                {{pass}}
+
+                      </tbody>
+                  </table>
+
+              </div>
+            {{pass}}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+        <!--form modal for exe-->
+        {{=form.custom.begin}}
+        <div class="modal fade" id="exeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-         <h4 class="modal-title" id="exampleModalLabel">ADD</h4>
+        <h4 class="modal-title" id="exampleModalLabel">ADD EXE</h4>
       </div>
       <div class="modal-body">
-        {{=form}}
-              </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Hash</label>
+            {{=form.custom.widget.exec_hash}}
+          </div>
+          <h4>OR upload file</h4>
+            <input type="file" id="file" name="files[]" multiple />
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comment</label>
+            {{=form.custom.widget.creator_comment}}
+          {{=form.custom.end}}
+          </div>
+
+           <!-- The file upload form used as target for the file upload widget -->
+        <!-- The table listing the files available for upload/download -->
+        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        {{=form.custom.submit}}
+      </div>
     </div>
   </div>
 </div>
-                <!-------------------------------------------->
-            {{if session['action']=='sensors' or session['action']=='endpoints':}}
-                <div class="box-body" id="sensors" style="display: block;">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>IP</th>
-                  <th>Owner ID</th>
-                    {{if session['action']=='endpoints':}}
-                    <th>OS version</th>
-                  {{pass}}
-                  <th>Enrollment Timestamp</th>
-                  <th>Enrolled Flag</th>
-                </tr>
-                </thead>
-                <tbody>
-                {{for row in devicestemp:}}
-                <tr onclick="window.location='{{=URL(f="subscriber",args=["statistics"],vars={'id':row.id,'type':session['action']})}}';">
-                  <td>{{=row.ip}}</td>
-                  <td>
-                  {{=row.owner_ID}}
-                  </td>
-                    {{if session['action']=='endpoints':}}
-                  <td>{{=row.os_version}}</td>
-                    {{pass}}
-                  <td>{{=row.enrollement_timestamp}}</td>
-                  <td> {{=row.enrolled_flag}}
-                  <span style="float:right;">
-                      {{if session['action']=='sensors':}}
-                 <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=['sensors'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
-                  {{else:}}
-                      <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=['endpoints'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
-                 {{pass}}
-                  </span></td>
-                     </tr>
-                    {{pass}}
 
-          </tbody></table>  </div>
+        <!--./end of modal-->
 
-                {{elif session['action']=='sensors_submissions' or session['action']=='agents_submissions':}}
-                <div class="box-body" id="submission" style="display: block;">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>Submitter</th>
-                  <th>Type</th>
-                    <th>File hash</th>
-                    <th>Timestamp</th>
-                  <th>Domain</th>
-                    <th>source</th>
-                    <th>destination</th>
-                    <th>protocol</th>
-                </tr>
-                </thead>
-                <tbody>
-                {{for row in devicestemp:}}
-                <tr>
-                  <td>{{=row.submitter_id}}</td>
-                  <td>
-                  {{=row.submitter_type}}
-                  </td>
-                  <td>{{=row.submitted_filehash}}</td>
-
-                  <td>{{=row.submitted_timestamp}}</td>
-                    <td> {{=row.submitted_domain}}</td>
-
-                    {{if row.submitted_domain=='mail':}}
-                    <td> {{=row.sent_to}}</td>
-                    <td> {{=row.sent_from}}</td>
-                    {{elif row.submitted_domain=='web':}}
-                    <td> {{=row.src_address}}</td>
-                    <td> {{=row.dst_address}}</td>
-                    {{pass}}
-                  <td> {{=row.protocol}}</td>
-                     </tr>
-                    {{pass}}
-          </tbody></table>  </div></div>
-                <!-- /.box-header -->
-        </div></div></section></div></div>
-       {{elif session['action']=='statistics':}}
-         <!-- DONUT CHART -->
-          <div class="box box-danger">
-            <div class="box-header with-border">
-              <h3 class="box-title">Donut Chart</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <div class="box-body">
-              <canvas id="pieChart" style="height:250px"></canvas>
-            </div>
-            <!-- /.box-body -->
+        <!--form modal for url-->
+        {{=form.custom.begin}}
+        <div class="modal fade" id="urlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">ADD URL</h4>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Hash</label>
+            {{=form.custom.widget.url_string}}
           </div>
-        {{elif session['action']=='sig-exe' or session['action']=='sig-exe-blacklist' or session['action']=='sig-exe-whitelist' :}}
-
-<div class="tab">
-    <a href="{{=URL(f='subscriber',args=['sig-exe-blacklist'])}}">Blacklist</a>
-    <a href="{{=URL(f='subscriber',args=['sig-exe-whitelist'])}}">Whitelist</a>
-                  <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
-            </div>
-          </form>
-        </div>
-             <div class="box-body" id="submission" style="display: block;">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>Hash</th>
-                    <th>Comment</th>
-                    <th><a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></a></th>
-                </tr>
-                </thead>
-                <tbody>
-                {{for row in siglist:}}
-                <tr>
-                <td>{{=row.exec_hash}}</td>
-                    <td>{{=row.creator_comment}}</td>
-                     <td> <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
-                    </td>
-                </tr>
-
-                    {{pass}}
-          </tbody></table>  </div>
-
-        {{elif session['action']=='sig-url' or session['action']=='sig-url-blacklist' or session['action']=='sig-url-malicious' :}}
-<div class="tab">
-    <a href="{{=URL(f='subscriber',args=['sig-url-blacklist'])}}">Blacklist</a>
-    <a href="{{=URL(f='subscriber',args=['sig-url-malicious'])}}">Malicious</a>
- <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
-            </div>
-          </form>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comment</label>
+            {{=form.custom.widget.creator_comment}}
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        {{=form.custom.submit}}
+      </div>
+    </div>
+  </div>
 </div>
-             <div class="box-body" id="submission" style="display: block;">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>URL</th>
-                    <th>Comment</th>
-                     <th><a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></a></th>
+        {{=form.custom.end}}
+        <!--./end of modal-->
 
-<!--                     <th><a href="{{=URL(f='subscriber',vars={0:'add'},args=session['action'])}}"><i class="fa fa-plus" style="color: green;"></i></a></th>
--->
-                </tr>
-                </thead>
-                <tbody>
-                {{for row in siglist:}}
-                <tr>
-                <td>{{=row.url_string}}</td>
-                    <td>{{=row.creator_comment}}
-                    </td><td><a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
-                    </td>
-                </tr>
-                    {{pass}}
-          </tbody></table></div>
-
-         {{elif session['action']=='sig-ip' or session['action']=='sig-ip-blacklist' or session['action']=='sig-ip-malicious' :}}
-<div class="tab">
-    <a href="{{=URL(f='subscriber',args=['sig-ip-blacklist'])}}">Blacklist</a>
-    <a href="{{=URL(f='subscriber',args=['sig-ip-malicious'])}}">Malicious</a>
- <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
-            </div>
-          </form>
+        <!--form modal for ip-->
+        {{=form.custom.begin}}
+        <div class="modal fade" id="ipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">ADD IP</h4>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Hash</label>
+            {{=form.custom.widget.ip_string}}
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comment</label>
+            {{=form.custom.widget.creator_comment}}
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        {{=form.custom.submit}}
+      </div>
+    </div>
+  </div>
 </div>
-             <div class="box-body" id="submission" style="display: block;">
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>IP</th>
-                    <th>Comment</th>
-                      <th><a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="url"><i class="fa fa-plus" style="color: green;"></i></a></th>
-
-                </tr>
-                </thead>
-                <tbody>
-                {{for row in siglist:}}
-                <tr>
-                <td>{{=row.ip_string}}</td>
-                    <td>{{=row.creator_comment}}
-                    </td><td>  <a href="{{=URL(f='subscriber',vars={'deletid':row.id},args=session['action'])}}"> <i class="fa fa-minus-square" style="color:red;"></i></a>
-                    </td>
-                </tr>
-                    {{pass}}
-          </tbody></table></div>
-        {{pass}}
+        {{=form.custom.end}}
+        <!--./end of modal-->
 
 
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
 
-        <script>
-            $('#exampleModal').on('show.bs.modal', function (event) {
+<script>
+document.getElementById('file').addEventListener('change', function () {
+    console.log('yes')
+    var blobSlice = File.prototype.slice || File.prototype.mozSlice || File.prototype.webkitSlice,
+        file = this.files[0],
+        chunkSize = 2097152,                             // Read in chunks of 2MB
+        chunks = Math.ceil(file.size / chunkSize),
+        currentChunk = 0,
+        spark = new SparkMD5.ArrayBuffer(),
+        fileReader = new FileReader();
+
+    fileReader.onload = function (e) {
+        console.log('read chunk nr', currentChunk + 1, 'of', chunks);
+        spark.append(e.target.result);                   // Append array buffer
+        currentChunk++;
+
+        if (currentChunk < chunks) {
+            loadNext();
+        } else {
+            console.log('finished loading');
+            //console.info('computed hash', spark.end());  // Compute hash
+            document.getElementById('no_table_exec_hash').value=spark.end()
+        }
+    };
+
+    fileReader.onerror = function () {
+        console.warn('oops, something went wrong.');
+    };
+
+    function loadNext() {
+        var start = currentChunk * chunkSize,
+            end = ((start + chunkSize) >= file.size) ? file.size : start + chunkSize;
+
+        fileReader.readAsArrayBuffer(blobSlice.call(file, start, end));
+    }
+
+    loadNext();
+});
+
+
+
+
+function text2Binary(string) {
+    return string.split('').map(function (char) {
+        return char.charCodeAt(0).toString(2);
+    }).join(' ');
+}
+ $('#exeModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-title').text('ADD ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+ $('#urlModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('ADD ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+$('#ipModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('ADD ' + recipient)
   modal.find('.modal-body input').val(recipient)
 })
   $( function() {
     $( "#tabs" ).tabs();
   } );
-  </script>
- <script>
  var modal = document.getElementById('add');
 // var modal1 = document.getElementById('addModal1');
 var content=document.getElementById('contentModal');

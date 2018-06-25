@@ -2,6 +2,10 @@
 # -------------------------------------------------------------------------
 #login function
 from datetime import datetime
+
+import copy
+
+
 def index():
     redirect(URL(f='login'))
 
@@ -131,7 +135,7 @@ def subscriber():
         session['type'] = request.vars['type']
         session['action'] = request.args[0]
 
-
+    print request.vars
     print session['action']
     if session['action'] == 'endpoints':
         type = 'Endpoints'
@@ -202,6 +206,9 @@ def subscriber():
 
     elif session['action']=='sig-url-blacklist':
         type='URLs'
+        if request.vars['id']!=None:
+            db(db.blacklisted_url.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-url-blacklist']))
         addform = SQLFORM.factory(db.blacklisted_url.url_string, db.blacklisted_url.creator_comment)
         if addform.process().accepted:
             id = db.blacklisted_url.insert(url_string=request.vars.url_string, creator_comment=request.vars.creator_comment,
@@ -209,10 +216,13 @@ def subscriber():
             redirect(URL(f='subscriber', args=['sig-url-blacklist']))
         siglist =db(db.blacklisted_url.type_=='blacklist').select(db.blacklisted_url.ALL)
 
-
     elif session['action']=='sig-url-malicious':
         type='URLs'
         addform = SQLFORM.factory(db.blacklisted_url.url_string, db.blacklisted_url.creator_comment)
+        if request.vars['id']!=None:
+            db(db.blacklisted_url.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-url-malicious']))
+
         if addform.process().accepted:
             id = db.blacklisted_url.insert(url_string=request.vars.url_string,
                                            creator_comment=request.vars.creator_comment,
@@ -224,16 +234,22 @@ def subscriber():
     elif session['action']=='sig-ip-blacklist':
         type='IPs'
         addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
+        if request.vars['id']!=None:
+            db(db.blacklisted_ip.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-ip-blacklist']))
         if addform.process().accepted:
             id = db.blacklisted_ip.insert(ip_string=request.vars.ip_string,
                                            creator_comment=request.vars.creator_comment,
                                            creator_id=session['user'].email, type_='blacklist')
-            redirect(URL(f='subscriber', args=['sig-ip-malicious']))
+            redirect(URL(f='subscriber', args=['sig-ip-blacklist']))
 
         siglist =db(db.blacklisted_ip.type_=='blacklist').select(db.blacklisted_ip.ALL)
     elif session['action']=='sig-ip-malicious':
         type='IPs'
         addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
+        if request.vars['id']!=None:
+            db(db.blacklisted_ip.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-ip-malicious']))
         if addform.process().accepted:
             id = db.blacklisted_ip.insert(ip_string=request.vars.ip_string,
                                            creator_comment=request.vars.creator_comment,
@@ -244,9 +260,35 @@ def subscriber():
 
     elif session['action']=='sig-exe-blacklist':
         type='Executables'
+        addform = SQLFORM.factory(db.blacklisted_exe.exec_hash, db.blacklisted_exe.creator_comment)
+        if request.vars['id']!=None:
+            db(db.blacklisted_exe.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-exe-blacklist']))
+        if addform.process().accepted:
+            id = db.blacklisted_exe.insert(exec_hash=request.vars.exec_hash,
+                                          creator_comment=request.vars.creator_comment,
+                                          creator_id=session['user'].email, type_='blacklist')
+            redirect(URL(f='subscriber', args=['sig-exe-blacklist']))
+
         siglist =db(db.blacklisted_exe.type_=='blacklist').select(db.blacklisted_exe.ALL)
     elif session['action']=='sig-exe-whitelist':
         type='Executables'
+        addform = SQLFORM.factory(db.blacklisted_exe.exec_hash,db.blacklisted_exe.creator_comment)
+        if request.vars['id']!=None:
+            db(db.blacklisted_exe.id == request.vars['id']).delete()
+            redirect(URL(f='subscriber', args=['sig-exe-whitelist']))
+        if addform.process().accepted:
+            print request.vars
+            id = db.blacklisted_exe.insert(exec_hash=request.vars.exec_hash,
+                                          creator_comment=request.vars.creator_comment,
+                                          creator_id=session['user'].email, type_='whitelist')
+            redirect(URL(f='subscriber', args=['sig-exe-whitelist']))
+        elif addform.errors:
+            print addform.errors
+            print 'error11'
+        else:
+            print 'error'
+
         siglist =db(db.blacklisted_exe.type_=='whitelist').select(db.blacklisted_exe.ALL)
 
 
@@ -275,7 +317,7 @@ def user():
     http://..../[app]/default/user/bulk_register
     use @auth.requires_login()
         @auth.requires_membership('group name')
-        @auth.requires_permission('read','table name',record_id)
+        @auth.requssssires_permission('read','table name',record_id)
     to decorate functions that need access control
     also notice there is http://..../[app]/appadmin/manage/auth to allow administrator to manage users
     """

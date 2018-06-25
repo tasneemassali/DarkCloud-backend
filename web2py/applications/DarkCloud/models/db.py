@@ -287,12 +287,12 @@ migrate=False
 #migrate=False
 )
 
-
 db.define_table(
    'blacklisted_ip',
     Field('ip_string', notnull = True,requires=IS_NOT_EMPTY()),
    Field('creator_id' ,db.users.email,notnull = True,requires=IS_NOT_EMPTY()),
     Field('creator_comment', notnull=True),
+Field('time_created', notnull = True),
 Field('type_' ,notnull = True,requires=(IS_NOT_EMPTY(),IS_IN_SET(['malicious','blacklist']))),
 migrate=False
  #   migrate=False
@@ -303,6 +303,7 @@ db.define_table(
     Field('url_string', notnull = True,requires=IS_NOT_EMPTY()),
     Field('creator_comment', notnull=True),
    Field('creator_id' ,db.users.email,notnull = True,requires=IS_NOT_EMPTY()),
+Field('time_created', notnull = True),
 Field('type_' ,notnull = True,requires=(IS_NOT_EMPTY(),IS_IN_SET(['malicious','blacklist']))),
    migrate=False
 )
@@ -310,6 +311,7 @@ db.define_table(
    'blacklisted_exe',
    Field('exec_hash', notnull = True),
     Field('creator_comment', notnull = True),
+    Field('time_created', notnull = True),
 Field('creator_id' ,db.users.email,notnull = True,requires=IS_NOT_EMPTY()),
     Field('type_', notnull=True, requires=(IS_NOT_EMPTY(), IS_IN_SET(['blacklist', 'whitelist']))),
 migrate=False
