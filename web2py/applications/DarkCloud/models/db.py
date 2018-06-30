@@ -237,12 +237,15 @@ db.define_table(
    Field('filesize','integer'),
    Field('filetype',requires=(IS_IN_SET(['elf','pe','js','pdf','word']),IS_NOT_EMPTY())),
    Field('file_image'),
+   Field('analyzed','boolean'),
 migrate=False
 )
 
 db.define_table(
    'process_traps',
+
    Field('trap_id',db.users.email, notnull = True,requires=IS_IN_SET(['agent','sensor','honeypot','user'])),
+   Field('id',notnull = True),
    Field('endpoint_id',db.endpoint_agents.id ,notnull = True),
    Field('process_timestamp' ,'time',notnull = True,requires=IS_NOT_EMPTY()),
    Field('action_taken' ,notnull = True,requires=(IS_NOT_EMPTY(),IS_IN_SET(['allow','deny']))),
@@ -294,6 +297,14 @@ db.define_table(
     Field('creator_comment', notnull=True),
 Field('time_created', notnull = True),
 Field('type_' ,notnull = True,requires=(IS_NOT_EMPTY(),IS_IN_SET(['malicious','blacklist']))),
+migrate=False
+ #   migrate=False
+)
+
+db.define_table(
+   'analysis',
+    Field('exe_hash', notnull = True,requires=IS_NOT_EMPTY()),
+    Field('json_analysis', notnull=True),
 migrate=False
  #   migrate=False
 )

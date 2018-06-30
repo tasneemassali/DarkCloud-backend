@@ -2,6 +2,7 @@
 # -------------------------------------------------------------------------
 #login function
 from datetime import datetime
+from collections import OrderedDict
 
 import copy
 
@@ -128,8 +129,13 @@ def subscriber():
     devicestemp = ''
     addform = ''
     siglist=''
-    type='Endpoints'
+    processes={}
+    session['levels']=0
+    type1='Endpoints'
+    exe_list=OrderedDict()
     session['vars']=None
+    session['hash']=request.vars['hashsearch']
+    session ['levels']=request.vars['level']
     if request.args:
         session['vars'] = request.vars
         session['type'] = request.vars['type']
@@ -138,7 +144,7 @@ def subscriber():
     print request.vars
     print session['action']
     if session['action'] == 'endpoints':
-        type = 'Endpoints'
+        type1= 'Endpoints'
         devicestemp = db(db.endpoint_agents).select(db.endpoint_agents.ALL)
 
         if session.vars['deletid'] != None:
@@ -161,7 +167,7 @@ def subscriber():
         if request.vars['deletid'] != None:
             db(db.sensors.id == request.vars['deletid']).delete()
             redirect(URL(f='subscriber', args=['sensors']))
-        type = 'Sensors'
+        type1 = 'Sensors'
         devicestemp = db(db.sensors).select(db.sensors.ALL)
 
 
@@ -178,7 +184,7 @@ def subscriber():
         print session['type']
         if(session['type']=="endpoints"):
             all=db(db.endpoint_agents).count()
-            type='endpoints'
+            type1='endpoints'
             session['all'] = 0.5
         else:
             all = db(db.sensors).count()
@@ -195,17 +201,17 @@ def subscriber():
                 session['avgendpoints'] = 0
 
     elif session['action'] == 'sensors_submissions':
-            type = 'Submissions'
+            type1 = 'Submissions'
             devicestemp = db(db.sensors_submissions).select(db.sensors_submissions.ALL)
     elif session['action'] == 'agents_submissions':
-            type = 'Submissions'
+            type1 = 'Submissions'
             devicestemp = db(db.agents_submissions).select(db.agents_submissions.ALL)
     elif session['action'] == 'events':
-            type = 'Submissions'
+            type1 = 'Submissions'
             devicestemp = db(db.sensors_submissions).select(db.sensors_submissions.ALL)
 
     elif session['action']=='sig-url-blacklist':
-        type='URLs'
+        type1='URLs'
         if request.vars['id']!=None:
             db(db.blacklisted_url.id == request.vars['id']).delete()
             redirect(URL(f='subscriber', args=['sig-url-blacklist']))
@@ -217,7 +223,7 @@ def subscriber():
         siglist =db(db.blacklisted_url.type_=='blacklist').select(db.blacklisted_url.ALL)
 
     elif session['action']=='sig-url-malicious':
-        type='URLs'
+        type1='URLs'
         addform = SQLFORM.factory(db.blacklisted_url.url_string, db.blacklisted_url.creator_comment)
         if request.vars['id']!=None:
             db(db.blacklisted_url.id == request.vars['id']).delete()
@@ -232,7 +238,7 @@ def subscriber():
         siglist =db(db.blacklisted_url.type_=='malicious').select(db.blacklisted_url.ALL)
 
     elif session['action']=='sig-ip-blacklist':
-        type='IPs'
+        type1='IPs'
         addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
         if request.vars['id']!=None:
             db(db.blacklisted_ip.id == request.vars['id']).delete()
@@ -245,7 +251,7 @@ def subscriber():
 
         siglist =db(db.blacklisted_ip.type_=='blacklist').select(db.blacklisted_ip.ALL)
     elif session['action']=='sig-ip-malicious':
-        type='IPs'
+        type1='IPs'
         addform = SQLFORM.factory(db.blacklisted_ip.ip_string, db.blacklisted_ip.creator_comment)
         if request.vars['id']!=None:
             db(db.blacklisted_ip.id == request.vars['id']).delete()
@@ -259,7 +265,7 @@ def subscriber():
         siglist =db(db.blacklisted_ip.type_=='malicious' and db.blacklisted_ip.creator_id == session['user'].email).select(db.blacklisted_ip.ALL)
 
     elif session['action']=='sig-exe-blacklist':
-        type='Executables'
+        type1='Executables'
         addform = SQLFORM.factory(db.blacklisted_exe.exec_hash, db.blacklisted_exe.creator_comment)
         if request.vars['id']!=None:
             db(db.blacklisted_exe.id == request.vars['id']).delete()
@@ -272,7 +278,7 @@ def subscriber():
 
         siglist =db(db.blacklisted_exe.type_=='blacklist').select(db.blacklisted_exe.ALL)
     elif session['action']=='sig-exe-whitelist':
-        type='Executables'
+        type1='Executables'
         addform = SQLFORM.factory(db.blacklisted_exe.exec_hash,db.blacklisted_exe.creator_comment)
         if request.vars['id']!=None:
             db(db.blacklisted_exe.id == request.vars['id']).delete()
@@ -291,8 +297,46 @@ def subscriber():
 
         siglist =db(db.blacklisted_exe.type_=='whitelist').select(db.blacklisted_exe.ALL)
 
+    elif session['action'] == 'monitor-exe':
+        if request.vars['id']!=None:
+            processes=db(db.process_traps.id==request.vars['id']).select(db.process_traps.ALL)
+        if session['hash'] != None:
+            print 'hi'
+            hash=session['hash']
+            pid = db(db.process_traps.child_hash == hash).select(db.process_traps.ALL)
+            pidlist=[]
+            pidlist1=[]
+            for row in pid:
+                exe_list[str(row.id)] = OrderedDict()
+                exe_list[str(row.id)][str(row.id)]=dict(row)
+                print exe_list
+                allchild = db(db.process_traps.creator_pid == row.child_id).select(db.process_traps.ALL)
+                for child in allchild:
+                    exe_list[str(row.id)][str(child.id)]=dict(child)
+                    pidlist.append(child.child_id)
+                    pidlist1.append(str(child.id))
+                print exe_list
+               # print type(exe_list[row.child_id])
+                break
+            pidlist2=[]
+            c=0
 
-    return dict(usertype=type, user=session.user.username, devicestemp=devicestemp, form=addform, siglist=siglist)
+            for i in range(int(session['levels'])-1):
+                for pid in pidlist:
+                    if pid==None or pidlist1[c]==None :
+                        break
+                    exe_list[pidlist1[c]]=OrderedDict()
+                    allchild = db(db.process_traps.creator_pid == pid).select(db.process_traps.ALL)
+                    if allchild == None:
+                        break
+                    for child in allchild:
+                        exe_list[pidlist1[c]][str(child.id)]= dict(child)
+                        pidlist2.append(child.child_id)
+                    c+=1
+                pidlist=pidlist2
+        print request.vars
+
+    return dict(usertype=type1, user=session.user.username, devicestemp=devicestemp, form=addform, siglist=siglist,exelist=exe_list,processlist=processes)
 
 
 def analyst():

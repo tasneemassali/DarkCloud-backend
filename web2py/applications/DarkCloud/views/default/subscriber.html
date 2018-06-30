@@ -144,6 +144,22 @@
         </li>
           <!--end of signatures-->
 
+          <!--process monitor-->
+           <li class="treeview">
+            <a href="{{=URL('subscriber',args=['sensors'])}}">
+                <i class="fa  fa-cogs"></i>
+                <span>Process Monitor</span>
+                <span class="pull-right-container">
+			        <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{=URL(f='subscriber',args=['monitor-exe'])}}"><i class="fa fa-circle-o"></i> Process Creation </a></li>
+                <li><a href="{{=URL(f='subscriber',args=['monitor-ip'])}}"><i class="fa fa-circle-o"></i> IP Connection</a></li>
+                <li><a href="{{=URL(f='subscriber',args=['monitor-url'])}}"><i class="fa fa-circle-o"></i>URL Resolving</a></li>
+            </ul>
+        </li>
+        <!--end of process monitor-->
           <!--events-->
         <li class="treeview">
            <a href="{{=URL('subscriber',args=['events'])}}">
@@ -324,7 +340,6 @@
                 {{pass}}
                 </tbody></table>
               </div>
-
               <!--url-->
             {{elif session['action']=='sig-url' or session['action']=='sig-url-blacklist' or session['action']=='sig-url-malicious' :}}
               <div class="tab">
@@ -394,6 +409,30 @@
                   </table>
 
               </div>
+               <!--start of minotring dta-->
+               {{elif session['action']=='monitor-exe':}}
+              <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="hashsearch" id="navbar-search-input" placeholder="Search">
+                    <input type="int" class="form-control" name="level" placeholder="levels">
+                        <input type="submit" class="form-control">
+                    </div>
+                </form>
+        <div class="chart" id="OrganiseChart1" style="height: 50%"></div>
+              {{if session['vars']['id']!=None:}}
+              {{for process in processlist:}}
+              <div class="process-tab">
+                  <table role="presentation" class="table table-striped"><tbody class="files">
+                  <tr class="content"><td><p>Image Path: </p></td><td>{{=process.child_image_path}}</td></tr>
+                  <tr class="content"><td><p>Hash: </p></td><td>{{=process.child_hash}}</td></tr></tr>
+                  <tr class="content"><td><p>PID: </p></td><td>{{=process.child_id}}</td></tr>
+                  <tr class="content"><td><p>Action Taken: </p></td><td>{{=process.action_taken}}</td></tr>
+                  <tr class="content"><td><p>Reason: </p></td><td>{{=process.reason}}</td></tr>
+                      </tbody></table>
+              </div>
+              {{break}}
+              {{pass}}
+              {{pass}}
             {{pass}}
           </div>
         </div>
@@ -401,7 +440,7 @@
     </section>
   </div>
 </div>
-
+{{if session['action']=='sig-exe-blacklist' or session['action']=='sig-ip-blacklist'or session['action']=='sig-url-blacklist':}}
         <!--form modal for exe-->
         {{=form.custom.begin}}
         <div class="modal fade" id="exeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -497,7 +536,90 @@
         <!--./end of modal-->
 
 
+{{pass}}
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+
+    <script>
+        {{if session['action']=='monitor-exe':}}
+        var config = {
+        container: "#OrganiseChart1",
+        rootOrientation:  'WEST', // NORTH || EAST || WEST || SOUTH
+        // levelSeparation: 30,
+        siblingSeparation:   20,
+        subTeeSeparation:    60,
+        scrollbar: "fancy",
+
+        connectors: {
+            type: 'step'
+        },
+        node: {
+            HTMLclass: 'nodeExample1',
+            collapsable: true
+        }
+    },
+                {{alllist=[]}}
+                {{for p_id,p_info in exelist.items():}}
+                {{print p_info}}
+                {{for p_id2,p_info2 in p_info.items():}}
+                {{print p_info2}}
+        {{name=p_info2.get('child_image_path')}}
+                {{parent=p_info2.get('creator_path')}}
+                {{parent2=parent}}
+                {{if parent != None:}}
+                {{parent2=parent.split('/')}}
+                {{parent2=parent2[-1]}}
+                {{parent2=parent2.split('.')[0]}}
+                {{pass}}
+                {{name1=name}}
+                {{if name != None:}}
+                {{name1=name.split('/')}}
+                {{name1=name1[-1]}}
+        {{name1=name1.split('.')[0]}}
+                {{pass}}
+        {{if name1!=None:}}
+        {{if name1 in alllist:}}
+        {{name1+=str(p_info2.get('id'))}}
+        {{pass}}
+        {{alllist.append(name1)}}
+                {{=name1}} = {
+        {{if parent2!=None and p_info2.get('child_hash')!=session['hash']:}}
+                    parent:{{=parent2}},
+        {{pass}}
+
+            text:{
+                id: {
+                    val: '{{=p_id2}}'
+                },
+                    name:{val:'{{=name1}}',
+                        href:'{{=URL(f='subscriber',vars={'id':p_info2.get('id'),'hashsearch':session['hash'],'level':session['levels']},args=['monitor-exe'])}}',
+                target:'_self'
+                    },
+                type:'{{=p_info2.get('process_timestamp')}}',
+
+        }
+        , HTMLid: '{{=name1}}'
+        },
+                {{pass}}
+                {{pass}}
+                        {{pass}}
+
+    ALTERNATIVE = [
+        config,
+        {{for i in alllist:}}
+        {{=i}},
+        {{pass}}
+    ];
+        new Treant( ALTERNATIVE );
+        {{pass}}
+
+                    $(".nodeExample1").click(function(e){
+
+                    $(this).children(".title").toggle();
+
+
+            })
+
+    </script>
 
 <script>
 document.getElementById('file').addEventListener('change', function () {
